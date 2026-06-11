@@ -3,11 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sathish Kumar G — HR Business Partner</title>
+<title>Sathish Kumar G — HR Business Partner | sathishkumarg.in</title>
 <meta name="description" content="Strategic HR Business Partner | 6+ Years | SaaS & Product Companies | Talent Strategy | POSH IC | Chennai, India">
-<meta property="og:title" content="Sathish Kumar G — HR Business Partner">
-<meta property="og:description" content="Strategic People Partner. 30% faster hiring. 88% offer acceptance. Targeting top product companies.">
-<meta name="theme-color" content="#FAFAF7">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,23 +12,18 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --cream:#FAFAF7;
+  --cream:#F8F7F2;
   --cream2:#F0EFE8;
-  --cream3:#E8E6DC;
+  --white:#FFFFFF;
   --indigo:#1E1B4B;
   --indigo2:#312E81;
   --slate:#334155;
   --muted:#64748B;
   --dim:#94A3B8;
   --green:#059669;
-  --green-hi:#10B981;
-  --green-dim:rgba(5,150,105,.1);
-  --green-glow:rgba(16,185,129,.06);
-  --amber:#D97706;
-  --amber-dim:rgba(217,119,6,.1);
-  --white:#FFFFFF;
-  --border:rgba(30,27,75,.1);
-  --border2:rgba(30,27,75,.06);
+  --green2:#10B981;
+  --gdim:rgba(5,150,105,.1);
+  --border:rgba(30,27,75,.09);
   --serif:'Fraunces',Georgia,serif;
   --sans:'Plus Jakarta Sans',system-ui,sans-serif;
   --ease:cubic-bezier(.22,1,.36,1);
@@ -39,299 +31,120 @@
 html{scroll-behavior:smooth}
 body{background:var(--cream);color:var(--slate);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:var(--green);text-decoration:none;transition:color .2s}
-a:hover{color:var(--indigo)}
 ::selection{background:var(--green);color:#fff}
 
-/* ── PROGRESS ─────────────────────────────────────────── */
-#prog{position:fixed;top:0;left:0;height:3px;width:0;z-index:9999;background:linear-gradient(90deg,var(--green),var(--green-hi));transition:width .1s}
+/* progress */
+#prog{position:fixed;top:0;left:0;height:3px;width:0;z-index:9999;background:linear-gradient(90deg,var(--green),var(--green2))}
 
-/* ── NAV ──────────────────────────────────────────────── */
-#nav{
-  position:fixed;top:0;left:0;right:0;z-index:1000;
-  padding:0 5%;height:70px;
-  display:flex;align-items:center;justify-content:space-between;
-  transition:all .35s var(--ease);
-}
-#nav.solid{
-  background:rgba(250,250,247,.95);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--border2);
-  height:60px;
-  box-shadow:0 1px 24px rgba(30,27,75,.06);
-}
-.logo{
-  font-family:var(--serif);font-size:1.1rem;
-  color:var(--indigo);letter-spacing:.01em;
-  display:flex;align-items:center;gap:.5rem;
-}
-.logo-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:blink 2.5s ease-in-out infinite}
+/* nav */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 5%;height:68px;display:flex;align-items:center;justify-content:space-between;transition:all .35s}
+#nav.solid{background:rgba(248,247,242,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);height:60px;box-shadow:0 1px 20px rgba(30,27,75,.06)}
+.logo{font-family:var(--serif);font-size:1.1rem;color:var(--indigo);display:flex;align-items:center;gap:.5rem}
+.ldot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:blink 2.5s ease-in-out infinite}
 @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
 .nav-ul{display:flex;gap:2rem;list-style:none}
-.nav-ul a{font-size:.8rem;font-weight:600;color:var(--muted);letter-spacing:.07em;text-transform:uppercase;transition:color .2s;padding:.2rem 0;border-bottom:2px solid transparent;transition:all .2s}
+.nav-ul a{font-size:.8rem;font-weight:600;color:var(--muted);letter-spacing:.07em;text-transform:uppercase;transition:all .2s;padding-bottom:2px;border-bottom:2px solid transparent}
 .nav-ul a:hover,.nav-ul a.on{color:var(--green);border-bottom-color:var(--green)}
-.nav-dl{
-  background:var(--indigo);color:#fff;font-size:.8rem;font-weight:700;
-  padding:9px 22px;border-radius:50px;letter-spacing:.06em;
-  transition:background .2s,transform .15s;
-}
-.nav-dl:hover{background:var(--green);color:#fff;transform:translateY(-1px)}
-.burger{display:none;background:none;border:none;cursor:pointer;color:var(--indigo);font-size:1.4rem;line-height:1}
+.ndl{background:var(--indigo);color:#fff;font-size:.8rem;font-weight:700;padding:9px 22px;border-radius:50px;letter-spacing:.05em;transition:all .2s;cursor:pointer;border:none}
+.ndl:hover{background:var(--green);transform:translateY(-1px)}
+.burger{display:none;background:none;border:none;cursor:pointer;color:var(--indigo);font-size:1.4rem}
 
-/* ── HERO ─────────────────────────────────────────────── */
-#hero{
-  position:relative;min-height:100vh;overflow:hidden;
-  display:flex;align-items:center;
-}
-.hero-photo{
-  position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1900&q=85') center/cover no-repeat;
-  transform:scale(1.06);
-  transition:transform 12s ease;
-}
-#hero:hover .hero-photo{transform:scale(1)}
-/* warm amber-green gradient overlay — positive, energetic */
-.hero-photo::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(
-    120deg,
-    rgba(30,27,75,.88) 0%,
-    rgba(30,27,75,.78) 40%,
-    rgba(5,150,105,.45) 100%
-  );
-}
-.hero-body{
-  position:relative;z-index:2;
-  padding:120px 5% 80px;
-  max-width:760px;
-}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:.55rem;
-  background:rgba(255,255,255,.1);backdrop-filter:blur(8px);
-  border:1px solid rgba(255,255,255,.18);
-  color:rgba(255,255,255,.9);font-size:.73rem;font-weight:700;
-  letter-spacing:.14em;text-transform:uppercase;
-  padding:6px 14px;border-radius:99px;margin-bottom:1.5rem;
-  animation:fadeUp .7s var(--ease) .2s both;
-}
-.hero-badge span{width:6px;height:6px;background:var(--green-hi);border-radius:50%;display:inline-block}
-.hero-h1{
-  font-family:var(--serif);
-  font-size:clamp(3rem,7.5vw,5.8rem);
-  color:#fff;line-height:1.04;
-  margin-bottom:.5rem;
-  animation:fadeUp .8s var(--ease) .35s both;
-}
-.hero-sub{
-  font-family:var(--serif);font-style:italic;
-  font-size:clamp(1.2rem,2.8vw,1.9rem);
-  color:rgba(255,255,255,.75);
-  margin-bottom:1.8rem;
-  animation:fadeUp .8s var(--ease) .5s both;
-}
-.hero-desc{
-  font-size:1rem;color:rgba(255,255,255,.72);
-  max-width:520px;line-height:1.85;margin-bottom:2rem;
-  animation:fadeUp .8s var(--ease) .65s both;
-}
-.hero-desc strong{color:#fff;font-weight:600}
-.hero-chips{
-  display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2.2rem;
-  animation:fadeUp .8s var(--ease) .75s both;
-}
-.chip{
-  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
-  backdrop-filter:blur(6px);color:rgba(255,255,255,.85);
-  font-size:.71rem;font-weight:600;padding:5px 14px;border-radius:99px;
-  letter-spacing:.04em;transition:all .25s;
-}
+/* ═══ HERO — animated network graph ═══ */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--indigo)}
+#hero-canvas{position:absolute;inset:0;z-index:0}
+/* subtle gradient overlay on top of canvas */
+#hero::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(30,27,75,.7) 0%,rgba(30,27,75,.3) 60%,rgba(5,150,105,.25) 100%);pointer-events:none}
+.hero-body{position:relative;z-index:2;padding:120px 5% 80px;max-width:780px}
+.hbadge{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.9);font-size:.73rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:99px;margin-bottom:1.5rem;animation:fadeUp .7s var(--ease) .2s both}
+.hbadge span{width:6px;height:6px;background:var(--green2);border-radius:50%;animation:blink 1.8s infinite}
+.hh1{font-family:var(--serif);font-size:clamp(3rem,7.5vw,5.8rem);color:#fff;line-height:1.04;margin-bottom:.5rem;animation:fadeUp .8s var(--ease) .35s both}
+.hsub{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2.8vw,1.9rem);color:rgba(255,255,255,.75);margin-bottom:1.8rem;animation:fadeUp .8s var(--ease) .5s both}
+.hdesc{font-size:1rem;color:rgba(255,255,255,.7);max-width:520px;line-height:1.85;margin-bottom:2rem;animation:fadeUp .8s var(--ease) .65s both}
+.hdesc strong{color:#fff;font-weight:600}
+.hchips{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2.2rem;animation:fadeUp .8s var(--ease) .75s both}
+.chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(6px);color:rgba(255,255,255,.82);font-size:.71rem;font-weight:600;padding:5px 14px;border-radius:99px;letter-spacing:.04em;transition:all .25s}
 .chip:hover{background:var(--green);border-color:var(--green);color:#fff}
-.hero-btns{
-  display:flex;gap:1rem;flex-wrap:wrap;
-  animation:fadeUp .8s var(--ease) .88s both;
-}
-.btn-g{
-  display:inline-flex;align-items:center;gap:.55rem;
-  background:var(--green);color:#fff;
-  padding:13px 28px;border-radius:50px;font-weight:700;font-size:.9rem;
-  transition:all .25s;box-shadow:0 4px 20px rgba(5,150,105,.35);
-}
-.btn-g:hover{background:var(--green-hi);color:#fff;transform:translateY(-2px);box-shadow:0 8px 28px rgba(16,185,129,.4)}
-.btn-w{
-  display:inline-flex;align-items:center;gap:.55rem;
-  background:rgba(255,255,255,.12);color:#fff;
-  border:1px solid rgba(255,255,255,.25);
-  padding:13px 28px;border-radius:50px;font-weight:600;font-size:.9rem;
-  backdrop-filter:blur(6px);transition:all .25s;
-}
-.btn-w:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.4);transform:translateY(-2px)}
+.hbtns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .8s var(--ease) .88s both}
+.btng{display:inline-flex;align-items:center;gap:.55rem;background:var(--green);color:#fff;padding:13px 28px;border-radius:50px;font-weight:700;font-size:.9rem;transition:all .25s;box-shadow:0 4px 20px rgba(5,150,105,.35);cursor:pointer;border:none}
+.btng:hover{background:var(--green2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(16,185,129,.4)}
+.btnw{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25);padding:13px 28px;border-radius:50px;font-weight:600;font-size:.9rem;backdrop-filter:blur(6px);transition:all .25s}
+.btnw:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+.scue{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:.4rem;color:rgba(255,255,255,.4);font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;animation:fadeUp 1s var(--ease) 1.2s both}
+.sarrow{animation:bounce 1.8s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}60%{transform:translateY(7px)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-/* scroll cue */
-.scroll-cue{
-  position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);
-  z-index:2;display:flex;flex-direction:column;align-items:center;gap:.4rem;
-  color:rgba(255,255,255,.45);font-size:.68rem;font-weight:600;
-  letter-spacing:.1em;text-transform:uppercase;
-  animation:fadeUp 1s var(--ease) 1.2s both;
-}
-.scroll-arrow{animation:arrowBounce 1.8s ease-in-out infinite}
-@keyframes arrowBounce{0%,100%{transform:translateY(0)}60%{transform:translateY(7px)}}
 
-/* ── METRICS BAR ──────────────────────────────────────── */
-#metrics{
-  background:var(--indigo);
-  position:relative;overflow:hidden;
-}
-#metrics::before{
-  content:'';position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=1400&q=60') center/cover;
-  opacity:.06;
-}
-.met-grid{
-  position:relative;z-index:1;
-  max-width:1140px;margin:0 auto;padding:0 5%;
-  display:grid;grid-template-columns:repeat(4,1fr);
-}
-.met-cell{
-  padding:2.6rem 1rem;text-align:center;
-  border-right:1px solid rgba(255,255,255,.1);
-  transition:background .3s;
-}
-.met-cell:last-child{border-right:none}
-.met-cell:hover{background:rgba(255,255,255,.04)}
-.met-n{
-  font-family:var(--serif);font-size:3.2rem;font-weight:700;
-  color:var(--green-hi);line-height:1;margin-bottom:.35rem;
-}
-.met-l{font-size:.78rem;color:rgba(255,255,255,.55);font-weight:500;letter-spacing:.04em}
+/* ═══ METRICS — animated gradient orbs ═══ */
+#metrics{position:relative;overflow:hidden;background:var(--indigo)}
+#met-canvas{position:absolute;inset:0;z-index:0;opacity:.5}
+.met-grid{position:relative;z-index:1;max-width:1140px;margin:0 auto;padding:0 5%;display:grid;grid-template-columns:repeat(4,1fr)}
+.mc{padding:2.6rem 1rem;text-align:center;border-right:1px solid rgba(255,255,255,.08);transition:background .3s}
+.mc:last-child{border-right:none}
+.mc:hover{background:rgba(255,255,255,.04)}
+.mn{font-family:var(--serif);font-size:3.2rem;font-weight:700;color:var(--green2);line-height:1;margin-bottom:.35rem}
+.ml{font-size:.78rem;color:rgba(255,255,255,.5);font-weight:500;letter-spacing:.04em}
 
-/* ── SHARED ───────────────────────────────────────────── */
+/* shared */
 .wrap{max-width:1140px;margin:0 auto;padding:0 5%}
 .sec{padding:110px 0}
-.eye{
-  display:flex;align-items:center;gap:.6rem;
-  font-size:.72rem;font-weight:700;color:var(--green);
-  letter-spacing:.18em;text-transform:uppercase;margin-bottom:.9rem;
-}
+.eye{display:flex;align-items:center;gap:.6rem;font-size:.72rem;font-weight:700;color:var(--green);letter-spacing:.18em;text-transform:uppercase;margin-bottom:.9rem}
 .eye::before{content:'';width:22px;height:1.5px;background:var(--green);display:block}
-.sh{
-  font-family:var(--serif);font-size:clamp(2rem,4.5vw,3rem);
-  color:var(--indigo);margin-bottom:1rem;line-height:1.12;
-}
+.sh{font-family:var(--serif);font-size:clamp(2rem,4.5vw,3rem);color:var(--indigo);margin-bottom:1rem;line-height:1.12}
 .ss{font-size:.98rem;color:var(--muted);max-width:560px;line-height:1.85;margin-bottom:3.5rem}
 
-/* ── ABOUT ────────────────────────────────────────────── */
-#about{background:var(--cream)}
-.about-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:start}
+/* ═══ ABOUT — animated floating geometric shapes ═══ */
+#about{position:relative;overflow:hidden;background:var(--cream)}
+#about-canvas{position:absolute;inset:0;z-index:0;pointer-events:none}
+.about-inner{position:relative;z-index:1}
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:start}
 .at p{font-size:.97rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem}
 .at p strong{color:var(--green);font-weight:600}
-.at blockquote{
-  border-left:3px solid var(--green);padding:1rem 1.4rem;
-  background:var(--green-dim);border-radius:0 10px 10px 0;
-  font-family:var(--serif);font-size:1.08rem;color:var(--indigo);
-  font-style:italic;line-height:1.7;margin:1.8rem 0;
-}
-/* photo frame in about */
-.about-img{
-  position:relative;border-radius:16px;overflow:hidden;
-  box-shadow:0 20px 60px rgba(30,27,75,.15);
-}
-.about-img img{width:100%;display:block;height:420px;object-fit:cover}
-.about-img-cap{
-  position:absolute;bottom:0;left:0;right:0;
-  background:linear-gradient(to top,rgba(30,27,75,.85),transparent);
-  padding:1.8rem 1.4rem;color:#fff;
-}
-.about-img-cap .cap-title{font-family:var(--serif);font-size:1.2rem;margin-bottom:.2rem}
-.about-img-cap .cap-sub{font-size:.8rem;color:rgba(255,255,255,.65);font-weight:500}
+.at blockquote{border-left:3px solid var(--green);padding:1rem 1.4rem;background:var(--gdim);border-radius:0 10px 10px 0;font-family:var(--serif);font-size:1.08rem;color:var(--indigo);font-style:italic;line-height:1.7;margin:1.8rem 0}
 .pillars{display:flex;flex-direction:column;gap:.9rem;margin-top:1.8rem}
-.pillar{
-  background:var(--white);border:1px solid var(--border2);
-  border-radius:12px;padding:1.2rem 1.4rem;
-  display:flex;gap:1rem;align-items:flex-start;
-  box-shadow:0 2px 12px rgba(30,27,75,.05);
-  transition:transform .25s,box-shadow .25s,border-color .25s;
-}
+.pillar{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.4rem;display:flex;gap:1rem;align-items:flex-start;box-shadow:0 2px 12px rgba(30,27,75,.05);transition:transform .25s,box-shadow .25s,border-color .25s}
 .pillar:hover{transform:translateX(5px);box-shadow:0 4px 20px rgba(5,150,105,.1);border-color:rgba(5,150,105,.25)}
-.pi{
-  width:38px;height:38px;border-radius:10px;
-  background:var(--green-dim);border:1px solid rgba(5,150,105,.2);
-  display:flex;align-items:center;justify-content:center;
-  font-size:1.1rem;flex-shrink:0;
-}
+.pi{width:38px;height:38px;border-radius:10px;background:var(--gdim);border:1px solid rgba(5,150,105,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
 .pt{font-size:.88rem;font-weight:700;color:var(--indigo);margin-bottom:.2rem}
 .pd{font-size:.82rem;color:var(--muted);line-height:1.65}
 
-/* ── CASE STUDIES ─────────────────────────────────────── */
+/* stats card beside pillars */
+.stat-card{background:var(--indigo);border-radius:16px;padding:2rem;color:#fff;margin-bottom:1.4rem}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.stat-item{text-align:center;padding:.8rem;background:rgba(255,255,255,.07);border-radius:10px}
+.stat-n{font-family:var(--serif);font-size:2rem;color:var(--green2);font-weight:700;line-height:1}
+.stat-l{font-size:.72rem;color:rgba(255,255,255,.55);margin-top:.2rem;font-weight:500}
+
+/* ═══ WORK — animated wave mesh ═══ */
 #work{position:relative;overflow:hidden}
-.work-photo{
-  position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1800&q=80') center/cover no-repeat;
-}
-/* warm teal-green overlay for "work" section */
-.work-photo::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,rgba(5,150,105,.95) 0%,rgba(30,27,75,.9) 100%);
-}
-.work-inner{position:relative;z-index:1;padding:110px 0}
-.work-inner .sh,.work-inner .eye,.work-inner .ss{color:rgba(255,255,255,.9) !important}
-.work-inner .eye{color:rgba(255,255,255,.7) !important}
+#work-canvas{position:absolute;inset:0;z-index:0}
+#work::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(5,150,105,.97) 0%,rgba(30,27,75,.93) 100%);pointer-events:none}
+.work-inner{position:relative;z-index:2;padding:110px 0}
+.work-inner .sh{color:#fff}
+.work-inner .eye{color:rgba(255,255,255,.7)}
 .work-inner .eye::before{background:rgba(255,255,255,.7)}
+.work-inner .ss{color:rgba(255,255,255,.6)}
 .cases{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
-.cc{
-  background:rgba(255,255,255,.95);border-radius:14px;
-  padding:1.8rem;
-  border-top:4px solid var(--green);
-  box-shadow:0 8px 30px rgba(30,27,75,.15);
-  transition:transform .25s,box-shadow .25s;
-}
+.cc{background:rgba(255,255,255,.96);border-radius:14px;padding:1.8rem;border-top:4px solid var(--green);box-shadow:0 8px 30px rgba(30,27,75,.15);transition:transform .25s,box-shadow .25s}
 .cc:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(30,27,75,.25)}
-.ctag{
-  font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--green);background:var(--green-dim);
-  border:1px solid rgba(5,150,105,.2);
-  display:inline-block;padding:3px 10px;border-radius:99px;margin-bottom:.9rem;
-}
+.ctag{font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green);background:var(--gdim);border:1px solid rgba(5,150,105,.2);display:inline-block;padding:3px 10px;border-radius:99px;margin-bottom:.9rem}
 .ctitle{font-family:var(--serif);font-size:1.18rem;color:var(--indigo);margin-bottom:.4rem;line-height:1.3}
 .cco{font-size:.74rem;color:var(--dim);font-weight:600;letter-spacing:.06em;margin-bottom:1rem;text-transform:uppercase}
 .sl{font-size:.67rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.2rem}
 .st{font-size:.86rem;color:var(--muted);line-height:1.7;margin-bottom:.7rem}
 .st strong{color:var(--green);font-weight:600}
-.cres{
-  margin-top:1rem;padding:.85rem 1rem;
-  background:linear-gradient(135deg,rgba(5,150,105,.08),rgba(16,185,129,.04));
-  border:1px solid rgba(5,150,105,.18);border-radius:8px;
-  font-size:.86rem;color:var(--green);font-weight:600;line-height:1.55;
-}
+.cres{margin-top:1rem;padding:.85rem 1rem;background:linear-gradient(135deg,rgba(5,150,105,.08),rgba(16,185,129,.04));border:1px solid rgba(5,150,105,.18);border-radius:8px;font-size:.86rem;color:var(--green);font-weight:600;line-height:1.55}
 .cres::before{content:'↗ ';font-weight:900}
 
-/* ── EXPERIENCE ───────────────────────────────────────── */
-#exp{
-  position:relative;overflow:hidden;
-  background:var(--cream);
-}
-/* subtle texture overlay */
-.exp-texture{
-  position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=50') center/cover;
-  opacity:.03;pointer-events:none;
-}
+/* ═══ EXPERIENCE — animated dot grid ═══ */
+#exp{position:relative;overflow:hidden;background:var(--cream)}
+#exp-canvas{position:absolute;inset:0;z-index:0;pointer-events:none}
 .exp-inner{position:relative;z-index:1}
 .tl{position:relative;padding-left:2.5rem}
-.tl::before{
-  content:'';position:absolute;left:.6rem;top:8px;bottom:8px;
-  width:2px;
-  background:linear-gradient(to bottom,var(--green) 0%,var(--green-hi) 60%,transparent 100%);
-  border-radius:99px;
-}
+.tl::before{content:'';position:absolute;left:.6rem;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--green) 0%,var(--green2) 60%,transparent 100%);border-radius:99px}
 .tli{position:relative;margin-bottom:2.8rem}
-.tldot{
-  position:absolute;left:-2rem;top:7px;
-  width:12px;height:12px;border-radius:50%;
-  background:var(--cream);border:2.5px solid var(--green);
-  transition:all .2s;
-}
+.tldot{position:absolute;left:-2rem;top:7px;width:12px;height:12px;border-radius:50%;background:var(--cream);border:2.5px solid var(--green);transition:all .2s}
 .tli:hover .tldot,.tli.cur .tldot{background:var(--green);box-shadow:0 0 0 5px rgba(5,150,105,.15)}
-.tli-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.15rem}
+.tlihead{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.15rem}
 .tlr{font-size:1.05rem;font-weight:700;color:var(--indigo)}
 .tld{font-size:.73rem;font-weight:700;color:var(--green);letter-spacing:.07em;white-space:nowrap;padding-top:.2rem}
 .tlco{font-size:.88rem;font-weight:700;color:var(--green);margin-bottom:.15rem}
@@ -341,118 +154,70 @@ a:hover{color:var(--indigo)}
 .tlul li::before{content:'–';position:absolute;left:0;color:var(--green);font-weight:800}
 .tlul li strong{color:var(--indigo);font-weight:600}
 
-/* ── SKILLS ───────────────────────────────────────────── */
+/* ═══ SKILLS — animated gradient aurora ═══ */
 #skills{position:relative;overflow:hidden}
-.sk-photo{
-  position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1800&q=80') center/cover;
-}
-/* indigo overlay — confidence, trust */
-.sk-photo::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(150deg,rgba(30,27,75,.96) 0%,rgba(30,27,75,.88) 60%,rgba(5,150,105,.5) 100%);
-}
-.sk-inner{position:relative;z-index:1;padding:110px 0}
+#skills-canvas{position:absolute;inset:0;z-index:0}
+#skills::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(150deg,rgba(30,27,75,.97) 0%,rgba(30,27,75,.9) 55%,rgba(5,150,105,.55) 100%);pointer-events:none}
+.sk-inner{position:relative;z-index:2;padding:110px 0}
 .sk-inner .sh{color:#fff}
 .sk-inner .eye{color:rgba(255,255,255,.7)}
 .sk-inner .eye::before{background:rgba(255,255,255,.7)}
 .sk-inner .ss{color:rgba(255,255,255,.6)}
-.sk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-.skc{
-  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
-  backdrop-filter:blur(8px);border-radius:12px;padding:1.4rem 1.5rem;
-  transition:all .25s;
-}
+.skgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.skc{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(8px);border-radius:12px;padding:1.4rem 1.5rem;transition:all .25s}
 .skc:hover{background:rgba(255,255,255,.12);border-color:rgba(16,185,129,.4);transform:translateY(-3px)}
-.skcat{font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--green-hi);margin-bottom:.7rem}
+.skcat{font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--green2);margin-bottom:.7rem}
 .skps{display:flex;flex-wrap:wrap;gap:.4rem}
-.skp{
-  font-size:.73rem;color:rgba(255,255,255,.65);
-  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
-  padding:3px 11px;border-radius:99px;transition:all .2s;cursor:default;
-}
-.skp:hover{background:rgba(5,150,105,.25);border-color:var(--green-hi);color:var(--green-hi)}
+.skp{font-size:.73rem;color:rgba(255,255,255,.65);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:3px 11px;border-radius:99px;transition:all .2s;cursor:default}
+.skp:hover{background:rgba(5,150,105,.25);border-color:var(--green2);color:var(--green2)}
 
-/* ── COMMUNITY ────────────────────────────────────────── */
-#comm{background:var(--cream2)}
+/* ═══ COMMUNITY — animated rising particles ═══ */
+#comm{position:relative;overflow:hidden;background:var(--cream2)}
+#comm-canvas{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.6}
+.comm-inner{position:relative;z-index:1}
 .cg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
-.cgc{
-  background:var(--white);border:1px solid var(--border2);
-  border-radius:14px;padding:2rem 1.6rem;
-  box-shadow:0 2px 16px rgba(30,27,75,.06);
-  transition:all .28s;position:relative;overflow:hidden;
-}
-.cgc::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:3px;
-  background:linear-gradient(90deg,var(--green),var(--green-hi));
-  transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease);
-}
+.cgc{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:2rem 1.6rem;box-shadow:0 2px 16px rgba(30,27,75,.06);transition:all .28s;position:relative;overflow:hidden}
+.cgc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green),var(--green2));transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
 .cgc:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(5,150,105,.12);border-color:rgba(5,150,105,.2)}
 .cgc:hover::before{transform:scaleX(1)}
 .cico{font-size:2.2rem;margin-bottom:1rem}
 .ctit{font-size:.95rem;font-weight:700;color:var(--indigo);margin-bottom:.55rem}
 .cdesc{font-size:.84rem;color:var(--muted);line-height:1.75}
 
-/* ── CONTACT ──────────────────────────────────────────── */
+/* ═══ CONTACT — animated diagonal lines ═══ */
 #contact{position:relative;overflow:hidden;padding:130px 0}
-.ct-photo{
-  position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1560264280-88b68371db39?w=1800&q=80') center/cover;
-}
-/* amber-warm overlay — approachable, open */
-.ct-photo::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,rgba(30,27,75,.93) 0%,rgba(5,150,105,.75) 100%);
-}
-.ct-inner{position:relative;z-index:1;text-align:center;max-width:700px;margin:0 auto;padding:0 5%}
+#ct-canvas{position:absolute;inset:0;z-index:0}
+#contact::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(30,27,75,.93) 0%,rgba(5,150,105,.8) 100%);pointer-events:none}
+.ct-inner{position:relative;z-index:2;text-align:center;max-width:700px;margin:0 auto;padding:0 5%}
 .ct-inner .sh{color:#fff}
 .ct-inner .eye{color:rgba(255,255,255,.7);justify-content:center}
 .ct-inner .eye::before{background:rgba(255,255,255,.7)}
 .ct-inner .ss{color:rgba(255,255,255,.65);margin:0 auto 2.8rem}
-.cc-row{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.8rem}
-.cc-item{
-  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
-  backdrop-filter:blur(8px);border-radius:10px;
-  padding:1rem 1.6rem;display:flex;align-items:center;gap:.7rem;
-  font-size:.88rem;color:rgba(255,255,255,.85);
-  transition:all .25s;
-}
-.cc-item:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.4);color:#fff;transform:translateY(-2px)}
-.cic{font-size:1.1rem}
-.cta-row{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.ccrow{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.8rem}
+.cci{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px);border-radius:10px;padding:1rem 1.6rem;display:flex;align-items:center;gap:.7rem;font-size:.88rem;color:rgba(255,255,255,.85);transition:all .25s}
+.cci:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.38);color:#fff;transform:translateY(-2px)}
+.ctarow{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
 
-/* ── FOOTER ───────────────────────────────────────────── */
-footer{
-  background:var(--indigo);
-  padding:1.8rem 5%;
-  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;
-}
+/* footer */
+footer{background:var(--indigo);padding:1.8rem 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
 footer span{font-size:.78rem;color:rgba(255,255,255,.4)}
-footer .fdot{color:var(--green-hi)}
+footer .fd{color:var(--green2)}
 
-/* ── MOBILE ───────────────────────────────────────────── */
+/* responsive */
 @media(max-width:960px){
-  .about-wrap,.cases,.met-grid{grid-template-columns:1fr}
-  .met-cell:not(:last-child){border-right:none;border-bottom:1px solid rgba(255,255,255,.1)}
-  .sk-grid,.cg{grid-template-columns:1fr 1fr}
+  .about-grid,.cases,.met-grid{grid-template-columns:1fr}
+  .mc:not(:last-child){border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}
+  .skgrid,.cg{grid-template-columns:1fr 1fr}
   .nav-ul{display:none}
   .burger{display:block}
-  .nav-ul.open{
-    display:flex;flex-direction:column;gap:0;
-    position:absolute;top:100%;left:0;right:0;
-    background:var(--cream);border-bottom:1px solid var(--border2);padding:1.2rem 5%;
-  }
-  .about-img{max-height:320px}
-  .about-img img{height:320px}
+  .nav-ul.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--border);padding:1.2rem 5%}
 }
 @media(max-width:600px){
-  .sk-grid,.cg{grid-template-columns:1fr}
-  .hero-h1{font-size:2.6rem}
-  .sec{padding:80px 0}
+  .skgrid,.cg{grid-template-columns:1fr}
+  .hh1{font-size:2.6rem}
+  .stat-grid{grid-template-columns:1fr 1fr}
 }
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
-}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
 </style>
 </head>
 <body>
@@ -460,7 +225,7 @@ footer .fdot{color:var(--green-hi)}
 
 <!-- NAV -->
 <nav id="nav">
-  <div class="logo"><div class="logo-dot"></div>Sathish Kumar G</div>
+  <div class="logo"><div class="ldot"></div>Sathish Kumar G</div>
   <ul class="nav-ul" id="navul">
     <li><a href="#about">About</a></li>
     <li><a href="#work">Work</a></li>
@@ -468,80 +233,78 @@ footer .fdot{color:var(--green-hi)}
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="Sathish_Kumar_HRBP_Resume_Final.docx" download class="nav-dl">Resume ↓</a>
+  <button class="ndl" id="dlBtn">Resume ↓</button>
   <button class="burger" id="burger">☰</button>
 </nav>
 
-<!-- HERO -->
+<!-- HERO — animated network particle canvas -->
 <section id="hero">
-  <div class="hero-photo"></div>
+  <canvas id="hero-canvas"></canvas>
   <div class="hero-body">
-    <div class="hero-badge"><span></span>HR Business Partner · Chennai, India</div>
-    <h1 class="hero-h1">Sathish<br>Kumar G</h1>
-    <p class="hero-sub">Strategic People Partner for Product Companies</p>
-    <p class="hero-desc">
-      I partner with <strong>Engineering &amp; Product leadership</strong> to turn business OKRs into people outcomes — faster hiring, stronger teams, and HR systems that scale. Currently at <strong>Quvia (Espace Networks)</strong>.
-    </p>
-    <div class="hero-chips">
+    <div class="hbadge"><span></span>HR Business Partner · Chennai, India</div>
+    <h1 class="hh1">Sathish<br>Kumar G</h1>
+    <p class="hsub">Strategic People Partner for Product Companies</p>
+    <p class="hdesc">I partner with <strong>Engineering &amp; Product leadership</strong> to turn business OKRs into people outcomes — faster hiring, stronger teams, HR systems that scale. Currently at <strong>Quvia (Espace Networks)</strong>.</p>
+    <div class="hchips">
       <span class="chip">SaaS &amp; Product Orgs</span>
       <span class="chip">Talent Strategy</span>
       <span class="chip">POSH IC Member</span>
       <span class="chip">Vendor Management</span>
       <span class="chip">6+ Years</span>
     </div>
-    <div class="hero-btns">
-      <a href="#work" class="btn-g">View Case Studies ↓</a>
-      <a href="#contact" class="btn-w">Get in Touch →</a>
+    <div class="hbtns">
+      <a href="#work" class="btng">View Case Studies ↓</a>
+      <a href="#contact" class="btnw">Get in Touch →</a>
     </div>
   </div>
-  <div class="scroll-cue"><div class="scroll-arrow">↓</div>Scroll</div>
+  <div class="scue"><div class="sarrow">↓</div>Scroll</div>
 </section>
 
-<!-- METRICS -->
+<!-- METRICS — aurora orb canvas -->
 <div id="metrics">
+  <canvas id="met-canvas"></canvas>
   <div class="met-grid">
-    <div class="met-cell" data-aos="fade-up" data-aos-delay="0">
-      <div class="met-n" data-count="30" data-suf="%">0%</div>
-      <div class="met-l">Faster Time-to-Hire</div>
-    </div>
-    <div class="met-cell" data-aos="fade-up" data-aos-delay="80">
-      <div class="met-n" data-count="25" data-suf="%">0%</div>
-      <div class="met-l">Lower Rejection Rate</div>
-    </div>
-    <div class="met-cell" data-aos="fade-up" data-aos-delay="160">
-      <div class="met-n" data-count="20" data-suf="%">0%</div>
-      <div class="met-l">Cost-per-Hire Savings</div>
-    </div>
-    <div class="met-cell" data-aos="fade-up" data-aos-delay="240">
-      <div class="met-n" data-count="88" data-suf="%">0%</div>
-      <div class="met-l">Offer Acceptance Rate</div>
-    </div>
+    <div class="mc" data-aos="fade-up" data-aos-delay="0"><div class="mn" data-count="30" data-suf="%">0%</div><div class="ml">Faster Time-to-Hire</div></div>
+    <div class="mc" data-aos="fade-up" data-aos-delay="80"><div class="mn" data-count="25" data-suf="%">0%</div><div class="ml">Lower Rejection Rate</div></div>
+    <div class="mc" data-aos="fade-up" data-aos-delay="160"><div class="mn" data-count="20" data-suf="%">0%</div><div class="ml">Cost-per-Hire Savings</div></div>
+    <div class="mc" data-aos="fade-up" data-aos-delay="240"><div class="mn" data-count="88" data-suf="%">0%</div><div class="ml">Offer Acceptance Rate</div></div>
   </div>
 </div>
 
-<!-- ABOUT -->
+<!-- ABOUT — floating polygons canvas -->
 <section id="about">
-  <div class="wrap sec">
-    <div class="eye" data-aos="fade-up">About me</div>
-    <h2 class="sh" data-aos="fade-up" data-aos-delay="60">HR that thinks like a product team</h2>
-    <div class="about-wrap">
-      <div class="at" data-aos="fade-right" data-aos-delay="80">
-        <p>I'm a Strategic HR Business Partner with <strong>6+ years</strong> embedded in SaaS, product, and IT environments. My work sits at the intersection of people and business — I don't run HR programs, I solve business problems through people strategy.</p>
-        <p>At <strong>Quvia (Espace Networks)</strong>, I partner directly with Engineering and Product leadership. I've rebuilt hiring frameworks, launched people analytics programs, designed org-wide policies, and led vendor negotiations — while serving as POSH IC member and driving campus engagement programs.</p>
-        <blockquote>"Great HR is invisible to employees but visible in outcomes — how fast teams form, how long great people stay, and how clearly the company's values live in everyday decisions."</blockquote>
-        <p>Actively looking for <strong>HRBP or People Partner roles</strong> at top product-led organisations — fintech, SaaS, or e-commerce — where people strategy is taken seriously at the leadership table.</p>
-        <div class="pillars">
-          <div class="pillar"><div class="pi">📊</div><div><div class="pt">Data before intuition</div><div class="pd">Every hiring decision and retention risk backed by people data — dashboards, funnel metrics, leadership-ready insights.</div></div></div>
-          <div class="pillar"><div class="pi">🤝</div><div><div class="pt">Trust as infrastructure</div><div class="pd">HR credibility is built through consistency and fair processes — from exit interviews to POSH complaints.</div></div></div>
-          <div class="pillar"><div class="pi">⚡</div><div><div class="pt">Scale with empathy</div><div class="pd">Policies that work at 20 break at 200. I design people systems that flex with growth without losing the human element.</div></div></div>
+  <canvas id="about-canvas"></canvas>
+  <div class="about-inner">
+    <div class="wrap sec">
+      <div class="eye" data-aos="fade-up">About me</div>
+      <h2 class="sh" data-aos="fade-up" data-aos-delay="60">HR that thinks like a product team</h2>
+      <div class="about-grid">
+        <div class="at" data-aos="fade-right" data-aos-delay="80">
+          <p>I'm a Strategic HR Business Partner with <strong>6+ years</strong> embedded in SaaS, product, and IT environments. My work sits at the intersection of people and business — I solve business problems through people strategy, not just run HR programs.</p>
+          <p>At <strong>Quvia (Espace Networks)</strong>, I partner with Engineering and Product leadership. I've rebuilt hiring frameworks, launched people analytics, designed org-wide policies, led vendor negotiations, and serve as POSH IC member.</p>
+          <blockquote>"Great HR is invisible to employees but visible in outcomes — how fast teams form, how long great people stay, and how clearly the company's values live in everyday decisions."</blockquote>
+          <p>Actively looking for <strong>HRBP or People Partner roles</strong> at top product-led organisations — fintech, SaaS, or e-commerce — where HR is strategic, not administrative.</p>
+          <div class="pillars">
+            <div class="pillar"><div class="pi">📊</div><div><div class="pt">Data before intuition</div><div class="pd">Every hiring decision backed by people data — dashboards, funnel metrics, leadership-ready insights.</div></div></div>
+            <div class="pillar"><div class="pi">🤝</div><div><div class="pt">Trust as infrastructure</div><div class="pd">HR credibility built through consistency and fair processes — from exit interviews to POSH compliance.</div></div></div>
+            <div class="pillar"><div class="pi">⚡</div><div><div class="pt">Scale with empathy</div><div class="pd">Policies that work at 20 break at 200. I design people systems that flex with growth.</div></div></div>
+            <div class="pillar"><div class="pi">💡</div><div><div class="pt">Business acumen first</div><div class="pd">I read product roadmaps, understand OKRs, and connect headcount plans to revenue goals.</div></div></div>
+          </div>
         </div>
-      </div>
-      <div data-aos="fade-left" data-aos-delay="120">
-        <div class="about-img">
-          <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&q=85" alt="Professional team collaboration in a modern workspace">
-          <div class="about-img-cap">
-            <div class="cap-title">People-first leadership</div>
-            <div class="cap-sub">Building teams that scale with purpose</div>
+        <div data-aos="fade-left" data-aos-delay="120">
+          <div class="stat-card">
+            <div style="font-family:var(--serif);font-size:1.1rem;margin-bottom:1.2rem;color:rgba(255,255,255,.8);font-style:italic">Impact at a glance</div>
+            <div class="stat-grid">
+              <div class="stat-item"><div class="stat-n">30%</div><div class="stat-l">Faster Hiring</div></div>
+              <div class="stat-item"><div class="stat-n">25%</div><div class="stat-l">Lower Rejection</div></div>
+              <div class="stat-item"><div class="stat-n">88%</div><div class="stat-l">Offer Acceptance</div></div>
+              <div class="stat-item"><div class="stat-n">50+</div><div class="stat-l">Hires at Virtusa</div></div>
+            </div>
+          </div>
+          <div class="pillars" style="margin-top:0">
+            <div class="pillar"><div class="pi">⚖️</div><div><div class="pt">POSH IC Member</div><div class="pd">Handle workplace complaints with confidentiality and full statutory compliance.</div></div></div>
+            <div class="pillar"><div class="pi">🎓</div><div><div class="pt">Campus Engagement</div><div class="pd">Mock interviews for pre-final year students — employer branding & early talent pipeline.</div></div></div>
+            <div class="pillar"><div class="pi">💼</div><div><div class="pt">Vendor Management</div><div class="pd">Primary POC for Naukri, SpringVerify BGV, certification partners. Led cost negotiations.</div></div></div>
           </div>
         </div>
       </div>
@@ -549,9 +312,9 @@ footer .fdot{color:var(--green-hi)}
   </div>
 </section>
 
-<!-- WORK / CASE STUDIES -->
+<!-- WORK — animated wave canvas -->
 <section id="work">
-  <div class="work-photo"></div>
+  <canvas id="work-canvas"></canvas>
   <div class="work-inner">
     <div class="wrap">
       <div class="eye" data-aos="fade-up">Case studies</div>
@@ -561,52 +324,52 @@ footer .fdot{color:var(--green-hi)}
         <div class="cc" data-aos="fade-up" data-aos-delay="0">
           <div class="ctag">Talent Acquisition</div>
           <div class="ctitle">Rebuilding the Technical Hiring Framework</div>
-          <div class="cco">Quvia (Espace Networks) · 2023–Present</div>
-          <div class="sl">Situation</div><div class="st">~35% candidate rejection from panels on profiles that had cleared HR screening. Engineering leads frustrated with wasted interview rounds.</div>
-          <div class="sl">Action</div><div class="st">Diagnosed 6 months of rejection feedback. Co-created role definition templates. Introduced <strong>competency-based scorecards</strong> and structured panel calibration sessions.</div>
-          <div class="cres">Rejection rate dropped <strong>25% in 2 quarters</strong>. Engineering now proactively partners with HR on role design.</div>
+          <div class="cco">Quvia · 2023–Present</div>
+          <div class="sl">Situation</div><div class="st">~35% rejection from panels on profiles that cleared HR screening. Engineering leads frustrated.</div>
+          <div class="sl">Action</div><div class="st">6-month diagnostic, role definition templates, <strong>competency scorecards</strong>, panel calibration sessions.</div>
+          <div class="cres">Rejection rate dropped <strong>25% in 2 quarters</strong>. Engineering now co-owns role design with HR.</div>
         </div>
         <div class="cc" data-aos="fade-up" data-aos-delay="80">
           <div class="ctag">Hiring Efficiency</div>
           <div class="ctitle">Cutting Time-to-Hire from 35 to 24 Days</div>
-          <div class="cco">Quvia (Espace Networks) · 2023–Present</div>
-          <div class="sl">Situation</div><div class="st">35+ day average TTH. Top candidates accepting competing offers. Sourcing over-dependent on low-quality job board pipelines.</div>
-          <div class="sl">Action</div><div class="st">Relaunched referral program. Built talent pipelines for recurring roles. Implemented parallel scheduling. Created a <strong>warm candidate database</strong>.</div>
-          <div class="cres">TTH: 35→24 days. Referral hires: &lt;10%→30%+. Acceptance: <strong>70%→88%</strong>. CPH down 20%.</div>
+          <div class="cco">Quvia · 2023–Present</div>
+          <div class="sl">Situation</div><div class="st">35+ day TTH, top candidates lost to competing offers, low-quality sourcing pipeline.</div>
+          <div class="sl">Action</div><div class="st">Referral program relaunch, talent pipelines, parallel scheduling, <strong>warm candidate database</strong>.</div>
+          <div class="cres">TTH: 35→24 days. Referrals: &lt;10%→30%+. Acceptance: <strong>70%→88%</strong>. CPH down 20%.</div>
         </div>
         <div class="cc" data-aos="fade-up" data-aos-delay="0">
           <div class="ctag">People Analytics</div>
           <div class="ctitle">Attrition Intelligence Program</div>
-          <div class="cco">Quvia (Espace Networks) · 2024</div>
-          <div class="sl">Situation</div><div class="st">Anecdotal awareness of attrition but no structured data. Two key engineers left citing "lack of growth clarity" — no early warning system.</div>
-          <div class="sl">Action</div><div class="st">Redesigned exit interview template. Built attrition dashboard segmented by team, tenure, reason. Launched <strong>quarterly People Insights reports</strong> to leadership.</div>
-          <div class="cres">Two targeted retention interventions launched. Transparent L&amp;D path + manager effectiveness program implemented.</div>
+          <div class="cco">Quvia · 2024</div>
+          <div class="sl">Situation</div><div class="st">Anecdotal attrition awareness, no structured data. Two key engineers left citing "no growth clarity."</div>
+          <div class="sl">Action</div><div class="st">Redesigned exit interviews, built attrition dashboard, <strong>quarterly People Insights reports</strong> to leadership.</div>
+          <div class="cres">Two targeted retention interventions launched. Improved 12–24 month tenure retention.</div>
         </div>
         <div class="cc" data-aos="fade-up" data-aos-delay="80">
           <div class="ctag">Vendor Management</div>
           <div class="ctitle">HR Vendor Cost Negotiation</div>
-          <div class="cco">Quvia (Espace Networks) · 2024</div>
-          <div class="sl">Situation</div><div class="st">HR vendor subscriptions (Naukri, SpringVerify, certification partners) on legacy pricing. No structured renegotiation process existed.</div>
-          <div class="sl">Action</div><div class="st">Became single POC for all HR vendors. Conducted usage audits, benchmarked market rates, led <strong>structured contract negotiations</strong>, introduced SLA tracking.</div>
-          <div class="cres">Measurable cost reductions across Naukri &amp; SpringVerify. Improved SLA compliance. Single accountability established.</div>
+          <div class="cco">Quvia · 2024</div>
+          <div class="sl">Situation</div><div class="st">Legacy pricing on Naukri, SpringVerify, certification partners. No renegotiation process.</div>
+          <div class="sl">Action</div><div class="st">Usage audits, market benchmarking, <strong>structured contract negotiations</strong>, SLA tracking introduced.</div>
+          <div class="cres">Measurable cost reductions. Improved SLA compliance. Single accountability established.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- EXPERIENCE — dot grid canvas -->
 <section id="exp">
-  <div class="exp-texture"></div>
+  <canvas id="exp-canvas"></canvas>
   <div class="exp-inner">
     <div class="wrap sec">
       <div class="eye" data-aos="fade-up">Experience</div>
       <h2 class="sh" data-aos="fade-up" data-aos-delay="60">Career timeline</h2>
-      <p class="ss" data-aos="fade-up" data-aos-delay="100">6+ years across SaaS, Fortune 500 IT, and high-growth recruitment environments.</p>
+      <p class="ss" data-aos="fade-up" data-aos-delay="100">6+ years across SaaS, Fortune 500 IT, and high-growth recruitment.</p>
       <div class="tl" data-aos="fade-up" data-aos-delay="120">
         <div class="tli cur">
           <div class="tldot"></div>
-          <div class="tli-head"><div class="tlr">HR Business Partner – Talent & Operations</div><div class="tld">AUG 2023 – PRESENT</div></div>
+          <div class="tlihead"><div class="tlr">HR Business Partner – Talent & Operations</div><div class="tld">AUG 2023 – PRESENT</div></div>
           <div class="tlco">Quvia (Espace Networks)</div>
           <div class="tltag">SaaS · Product-led org · Global & remote-first workforce</div>
           <ul class="tlul">
@@ -616,49 +379,45 @@ footer .fdot{color:var(--green-hi)}
             <li>Offer acceptance: <strong>70% → 88%</strong></li>
             <li>IC member under POSH Act — complaint handling & statutory compliance</li>
             <li>HR vendor management — Naukri, SpringVerify; <strong>cost negotiations & contract finalisation</strong></li>
-            <li>Campus mock interviews for pre-final year students — employer branding & talent pipeline</li>
+            <li>Campus mock interviews for pre-final year students</li>
             <li>HRIS: Remote, Papaya Global, BambooHR, GreyHR</li>
           </ul>
         </div>
         <div class="tli">
           <div class="tldot"></div>
-          <div class="tli-head"><div class="tlr">Senior IT Recruiter (Contract)</div><div class="tld">JUN 2022 – NOV 2022</div></div>
-          <div class="tlco">Virtusa</div>
-          <div class="tltag">Global IT services · High-volume product & engineering hiring</div>
+          <div class="tlihead"><div class="tlr">Senior IT Recruiter (Contract)</div><div class="tld">JUN 2022 – NOV 2022</div></div>
+          <div class="tlco">Virtusa</div><div class="tltag">Global IT services · High-volume product & engineering hiring</div>
           <ul class="tlul">
             <li>Closed <strong>50+ hires</strong> across product, engineering, QA, cloud in 6 months</li>
             <li>Hiring cycle: <strong>25 → 17 days</strong> (32% improvement)</li>
-            <li>Veriklick & Talview deployment — freed <strong>10 engineering hours/week</strong></li>
+            <li>Veriklick & Talview — freed <strong>10 engineering hours/week</strong></li>
             <li><strong>>90%</strong> offer-to-joining conversion rate</li>
           </ul>
         </div>
         <div class="tli">
           <div class="tldot"></div>
-          <div class="tli-head"><div class="tlr">HR Recruiter (Contract)</div><div class="tld">MAR 2021 – DEC 2021</div></div>
-          <div class="tlco">HCL Technologies</div>
-          <div class="tltag">Fortune 500 IT · Multi-function hiring across India</div>
+          <div class="tlihead"><div class="tlr">HR Recruiter (Contract)</div><div class="tld">MAR 2021 – DEC 2021</div></div>
+          <div class="tlco">HCL Technologies</div><div class="tltag">Fortune 500 IT · Multi-function hiring across India</div>
           <ul class="tlul">
             <li>Full-cycle recruitment across <strong>10+ IT functions</strong></li>
-            <li>Mass hiring events handling <strong>100+ candidates per event</strong></li>
-            <li>Talent pool of <strong>500+ pre-screened candidates</strong> built & maintained</li>
+            <li>Mass hiring events — <strong>100+ candidates per event</strong></li>
+            <li>Talent pool of <strong>500+ pre-screened candidates</strong></li>
           </ul>
         </div>
         <div class="tli">
           <div class="tldot"></div>
-          <div class="tli-head"><div class="tlr">IT Recruiter (Contract)</div><div class="tld">DEC 2019 – JAN 2021</div></div>
-          <div class="tlco">Infomatics Inc.</div>
-          <div class="tltag">IT staffing · Permanent and contract placement</div>
+          <div class="tlihead"><div class="tlr">IT Recruiter (Contract)</div><div class="tld">DEC 2019 – JAN 2021</div></div>
+          <div class="tlco">Infomatics Inc.</div><div class="tltag">IT staffing · Permanent and contract placement</div>
           <ul class="tlul">
-            <li>End-to-end recruitment across IT verticals for multiple clients</li>
-            <li>Coordinated with <strong>8+ vendor partners</strong> with SLA-driven tracking</li>
+            <li>End-to-end recruitment across IT verticals, multiple clients simultaneously</li>
+            <li>Coordinated <strong>8+ vendor partners</strong> with SLA tracking</li>
             <li>Niche-skill database — reduced time-to-shortlist by <strong>~20%</strong></li>
           </ul>
         </div>
         <div class="tli">
           <div class="tldot"></div>
-          <div class="tli-head"><div class="tlr">HR Trainee</div><div class="tld">AUG 2019 – NOV 2019</div></div>
-          <div class="tlco">BUZZ Works Solutions</div>
-          <div class="tltag">HR solutions firm · Foundation in recruitment & operations</div>
+          <div class="tlihead"><div class="tlr">HR Trainee</div><div class="tld">AUG 2019 – NOV 2019</div></div>
+          <div class="tlco">BUZZ Works Solutions</div><div class="tltag">HR solutions firm · Foundation in recruitment & operations</div>
           <ul class="tlul"><li>Recruitment coordination, HR documentation, onboarding support</li></ul>
         </div>
       </div>
@@ -666,15 +425,15 @@ footer .fdot{color:var(--green-hi)}
   </div>
 </section>
 
-<!-- SKILLS -->
+<!-- SKILLS — aurora canvas -->
 <section id="skills">
-  <div class="sk-photo"></div>
+  <canvas id="skills-canvas"></canvas>
   <div class="sk-inner">
     <div class="wrap">
       <div class="eye" data-aos="fade-up">Skills & tools</div>
       <h2 class="sh" data-aos="fade-up" data-aos-delay="60">What I bring to the table</h2>
       <p class="ss" data-aos="fade-up" data-aos-delay="100">Full-spectrum HRBP toolkit — strategic planning to HRIS operations.</p>
-      <div class="sk-grid">
+      <div class="skgrid">
         <div class="skc" data-aos="fade-up" data-aos-delay="0"><div class="skcat">HR Strategy</div><div class="skps"><span class="skp">Workforce Planning</span><span class="skp">Org Design</span><span class="skp">Succession Planning</span><span class="skp">Headcount Planning</span><span class="skp">OKR Alignment</span><span class="skp">Stakeholder Consulting</span></div></div>
         <div class="skc" data-aos="fade-up" data-aos-delay="60"><div class="skcat">Talent Acquisition</div><div class="skps"><span class="skp">Full-Cycle Recruitment</span><span class="skp">Panel Calibration</span><span class="skp">Employer Branding</span><span class="skp">Campus Relations</span><span class="skp">Referral Programs</span></div></div>
         <div class="skc" data-aos="fade-up" data-aos-delay="120"><div class="skcat">People Analytics</div><div class="skps"><span class="skp">Attrition Analysis</span><span class="skp">Hiring-Funnel Metrics</span><span class="skp">KPI Tracking</span><span class="skp">Retention Strategy</span><span class="skp">Data-Driven Decisions</span></div></div>
@@ -686,92 +445,362 @@ footer .fdot{color:var(--green-hi)}
   </div>
 </section>
 
-<!-- COMMUNITY -->
+<!-- COMMUNITY — rising particles canvas -->
 <section id="comm">
-  <div class="wrap sec">
-    <div class="eye" data-aos="fade-up">Beyond the role</div>
-    <h2 class="sh" data-aos="fade-up" data-aos-delay="60">Community & responsibility</h2>
-    <p class="ss" data-aos="fade-up" data-aos-delay="100">The work that doesn't show on a JD but defines the HR professional.</p>
-    <div class="cg">
-      <div class="cgc" data-aos="zoom-in" data-aos-delay="0"><div class="cico">⚖️</div><div class="ctit">POSH Internal Committee Member</div><div class="cdesc">IC member under the Prevention of Sexual Harassment Act. Handle complaints with confidentiality, procedural rigour, and full statutory compliance — ensuring every employee feels safe and heard.</div></div>
-      <div class="cgc" data-aos="zoom-in" data-aos-delay="80"><div class="cico">🎓</div><div class="ctit">Campus Mock Interview Program</div><div class="cdesc">Conduct mock interviews for pre-final year students at partner colleges — part of employer branding and public relations, building early-talent pipelines while investing in the next generation.</div></div>
-      <div class="cgc" data-aos="zoom-in" data-aos-delay="160"><div class="cico">🤝</div><div class="ctit">Certification & Coaching Partnerships</div><div class="cdesc">Single POC for L&D and certification vendors. Manage vendor relationships, coordinate employee upskilling, and negotiate subscription costs to maximise value for the organisation.</div></div>
+  <canvas id="comm-canvas"></canvas>
+  <div class="comm-inner">
+    <div class="wrap sec">
+      <div class="eye" data-aos="fade-up">Beyond the role</div>
+      <h2 class="sh" data-aos="fade-up" data-aos-delay="60">Community & responsibility</h2>
+      <p class="ss" data-aos="fade-up" data-aos-delay="100">The work that doesn't show on a JD but defines the HR professional.</p>
+      <div class="cg">
+        <div class="cgc" data-aos="zoom-in" data-aos-delay="0"><div class="cico">⚖️</div><div class="ctit">POSH Internal Committee Member</div><div class="cdesc">IC member under the Prevention of Sexual Harassment Act. Handle complaints with confidentiality, procedural rigour, and full statutory compliance.</div></div>
+        <div class="cgc" data-aos="zoom-in" data-aos-delay="80"><div class="cico">🎓</div><div class="ctit">Campus Mock Interview Program</div><div class="cdesc">Conduct mock interviews for pre-final year students at partner colleges — employer branding, public relations, and early-talent pipeline building.</div></div>
+        <div class="cgc" data-aos="zoom-in" data-aos-delay="160"><div class="cico">🤝</div><div class="ctit">Certification & Coaching Partnerships</div><div class="cdesc">Single POC for L&D and certification vendors. Manage relationships, coordinate upskilling, and negotiate subscription costs.</div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CONTACT — diagonal lines canvas -->
 <section id="contact">
-  <div class="ct-photo"></div>
+  <canvas id="ct-canvas"></canvas>
   <div class="ct-inner">
     <div class="eye" data-aos="fade-up">Let's connect</div>
     <h2 class="sh" data-aos="fade-up" data-aos-delay="60">Open to the right opportunity</h2>
-    <p class="ss" data-aos="fade-up" data-aos-delay="100">Looking for HRBP or People Partner roles at product-led companies where HR is a strategic function, not a support one.</p>
-    <div class="cc-row" data-aos="fade-up" data-aos-delay="140">
-      <a href="mailto:sathishnk6@gmail.com" class="cc-item"><span class="cic">✉</span>sathishnk6@gmail.com</a>
-      <a href="tel:+919600534948" class="cc-item"><span class="cic">📞</span>+91 9600534948</a>
-      <a href="https://www.linkedin.com/in/sathish-kumar-g-503452130" target="_blank" class="cc-item"><span class="cic">🔗</span>LinkedIn</a>
-      <a href="#" class="cc-item"><span class="cic">📍</span>Chennai, India</a>
+    <p class="ss" data-aos="fade-up" data-aos-delay="100">Looking for HRBP or People Partner roles at product-led companies where HR is strategic, not a support function.</p>
+    <div class="ccrow" data-aos="fade-up" data-aos-delay="140">
+      <a href="mailto:sathishnk6@gmail.com" class="cci">✉ sathishnk6@gmail.com</a>
+      <a href="tel:+919600534948" class="cci">📞 +91 9600534948</a>
+      <a href="https://www.linkedin.com/in/sathish-kumar-g-503452130" target="_blank" class="cci">🔗 LinkedIn</a>
+      <span class="cci">📍 Chennai, India</span>
     </div>
-    <div class="cta-row" data-aos="fade-up" data-aos-delay="180">
-      <a href="Sathish_Kumar_HRBP_Resume_Final.docx" download class="btn-g">Download Resume ↓</a>
-      <a href="mailto:sathishnk6@gmail.com" class="btn-w">Send a Message →</a>
+    <div class="ctarow" data-aos="fade-up" data-aos-delay="180">
+      <button class="btng" id="dlBtn2">Download Resume ↓</button>
+      <a href="mailto:sathishnk6@gmail.com" class="btnw">Send a Message →</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <span>© 2025 Sathish Kumar G <span class="fdot">·</span> sathishkumarg.in</span>
-  <span>HR Business Partner <span class="fdot">·</span> Chennai, India</span>
+  <span>© 2025 Sathish Kumar G <span class="fd">·</span> sathishkumarg.in</span>
+  <span>HR Business Partner <span class="fd">·</span> Chennai, India</span>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-AOS.init({duration:750,easing:'ease-out-quart',once:true,offset:70,delay:0});
+// ── RESUME DOWNLOAD (base64 embedded — works everywhere) ──────
+const RESUME_B64 = "UEsDBBQAAAAIACNoy1ygjo6lmgEAADgIAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbLVWy07DMBD8lShX1LhwQAi15cDjCBzgA1x7kxpir2VvCvw96/QhBZpSoLllPTM7E+9GyuTq3dbZEkI06Kb5aTHOM3AKtXHVNH9+uhtd5FezydOHh5gx1cVpviDyl0JEtQArY4EeHCMlBiuJy1AJL9WrrECcjcfnQqEjcDSi1COfTW6glE1N2fXqPLWe5sYmvndVnt2+8/EqTqrFXsWLh66kPfi15ifJ3PqOItX7FZUpO4pU71fEZXXC99hR8VmvSnpfGyWJiWLp9Jc5jNYzKALULScujI/fDBiNBzl8Fab6j8mwLI0CjaqxLClwXjaR2aDvuEnHBDVRe20PvKHBaPiPzxsG7QMqiJGX29bFFrHSuNXNPMpA99Jyb5HoYktZv+4gOSJ91BB3B1hh/7LfLILCACM29hDI7PDjgI+MRpGIx3xh1URCe5h1Sz2mOaRt0qAPsufWg07aNXYOgZ93D3sLDxqiRCSH1LdxW3jQEDyTPRk26LCfHRDxU9+Ht0YHjaDQJqAnwgYdeBu4kZzX0LcNa3gTQrS/ArNPUEsDBBQAAAAIACNoy1wWdMLMEAMAAEERAAAPAAAAd29yZC9zdHlsZXMueG1s5VZdb5swFP0riPeWQCBto9KqSxu10rRV/dCeHWOCVWMz2zTtfv1sMCSBsKQN7aTtKfG9l8M59wPf0/OXlFjPiAvMaGi7hwPbQhSyCNN5aD8+TA+O7fOz08VYyFeChKWiqRinMLQTKbOx4wiYoBSIQ5Yhqpwx4ymQ6sjnTgr4U54dQJZmQOIZJli+Ot5gMLINDN8FhcUxhuiSwTxFVBbPOxwRhcioSHAmKrTFLmgLxqOMM4iEUApTUuKlANMaxvVbQCmGnAkWy0MlxjAqoNTj7qD4l5IlQPA2AK8GSOH4Zk4ZBzOCQlsxsRSYrdMfMXiJYpATKfSR33JzNKfiZ8qoFNZiDATEOLQngOAZx7ayQLF2REDIC4HBmjG5oGLlKUdDQkYYV75nQEJ7eOS7gVs6xK/K6g0qy0Ss2xzDzGnyzepTGdUQV7SagpKvmcpCBjiYc5AlmmPhuolC+wFLgorMUJCi6r2ltaAzAwJF32nl+aZ7gJQuil7kJvvPadEozkpKlzKDUVtmaVuRWdDbVcI1AnrK3JYK47DcPpWsVdK7OvK/BM1KDr22xNK2p0SvU6L3yRK9DVX0+qjisFPi8MMkulP/8ui4JdHfINHvQaLfKdHvUyIuDngi2h+gZU33lBJ0Sgk+oSH3JD/qJD/6hFZ7L/l7yRmdt6gbc4+8ZyVW0T/vJfsVC3lbe5qctddaurdxX3LspgETBQcl4usFVz5OMH1qV7z2bHq7uUxrinovKANzfMsx42oRq2JPToyHJjhCPxJEHxVWZyMMgtFwYi6mvDLqVaq8d7cnfLPSKWOSMonuUIy42j/bV3tsIixeh/QlXaAUX+MoQnRLJtSaLC8IntdvE7kqg4AcZ3Kf2ajUP6gu7xYutXdbs+meqOyrsBOV9v3zkJmtKANQf2/UphmrSqqu0HLUq5G+aurDXa63WJBLZpJjHm/tVjutkO/qp1p6M6tVgKUjrGV2dm6nrkT31mwfmZ4rGv152lAZ8C8Om9G+cdYq2W8etRXQ/2zSmsqbKTX+XuZstXR/d8yqf+LsN1BLAwQUAAAACAAjaMtcuCkq6sYCAAC+DgAAEgAAAHdvcmQvbnVtYmVyaW5nLnhtbNVXyW7bMBD9FUP3REsU2RXiBKlTFy66AU0/gJJoiwgXgaTkpKfee8ihQHvtt/VLOtRmy21SW24A9+IxZ3nzOMOhpLOLW0YHBZaKCD623GPHGmAei4Twxdj6eD09GlkX52fLkOcswhK0AwjgKlxm8dhKtc5C21ZxihlSx4zEUigx18exYLaYz0mM7aWQie05rlP+y6SIsVKAM0G8QMqq4djvaCLDHIxzIRnSsJQLmyF5k2dHgJ4hTSJCib4DbCdoYMTYyiUPa4ijlpAJCStCtWgi5DZ5q5ArEecMc11mtCWmwEFwlZJstY2+aGBMG5DisU0UjFptC1x/vx5cSbQEsQLchn5SBTFaMX8c0XW26IiBaCO2odDN2TBhiPBV4l6lWSuue7obgLcJkC32a85LKfJshUb2Q5vxmxaL452w6iavb03tR+ZDijKYQBaHswUXEkUUGEHLBlD1gTnWlrlyUKS0RLF+m7NBZzVL4KayjHMosdJIGmV1O13ONZbPJUY3Y8spUVhONXmNC0yv7zIMQAWiwP4ukiR5Y2zU2Czb+NKCggMBYaLLBBpGFOa8wCal8SnzNTBuFQeX45S1yiinFOsW8Rrftqaf3+9b/au40VI8r92z99IIwhOwGfXYGnqGSZgivijv5JPAMb527WyXWJvk3ach/2VX8q7v92DvPQn7bz92Ze+5QQ/2JwdycLzRqAd7/0BODpDtwf70QE6Of9JnaoMDOTmnTp+pHR4K+2GfqR0dCPvA325q7c4T8a+PS+//fFx+/rrz5G2Uz/M75VuGshZTwbUyhVIxgXerCaIE9mhiY9VZYqT0pSKoo0wvuVqLKtlE1e9ElTIWVMiGsjMdBsGLyk19asvxrNFMVFdn1zwf7jYvu8ybl6GNAzBLNkoOKO/gKw+aiNda1jZozbaKsjth5Zr/Ibn3cHLv3ye31z5Fz38BUEsDBBQAAAAIACNoy1x/0S03sRoAAIwRAQARAAAAd29yZC9kb2N1bWVudC54bWztXctyG8mVXc9fZDCiO6QQIDz4ECV1twcESZFuSaQJSh57l6hKANmsqixnZgGCV145YhazGTtiNhMzn+G9P6W/YD5h7s1HofAgCVIUBBG1kAgUqrLycfPc980ffvMpjsiQScVF8uNW43l9i7AkECFP+j9ufbg8ru5v/eanH0avQhFkMUs0gfsT9WqUBj9uDbROX9VqKhiwmKrnMQ+kUKKnnwcirolejwesNhIyrDXrjbr5lEoRMKWg8TZNhlRtuebi+dZEyhL4sSdkTDV8lf1aTOVVllah9ZRq3uUR12Nou77nmxE/bmUyeeWaqOYdwkde2Q65P/4Jucx77SOHbgbMG2uSRdAHkagBTyfDuG9r8OPANzK8aRDDONrKl6Cx83lrcCjpCP5MGlym+6F9KI5sz29usVFfYkWwifyJZbow/U7fk5jyZPLie01NYXIbu3droDnbQNr/vMV5I0WWTlrjn9faaXKVt5WwO7XlFrk4NPV5nekMaJrvwODTco05usP2dmrBgErNPk3aaNy5kd3ay9r+fEPNezQEA2w25pvavnNTezXs1VxDS9LyTEPQq7mWliTq2ZYWDG7vfi0151t6cb+Wtudb2r9fS3PkBEBydY+m+GSP0Xg7vHMLL2qxCFm0PQHDxl7Altwefq/tu81aCybjwXb4kv3x7ezl7fBif+7XmUIDKtTh4E6tND021/BZqumAqkGxxbvBGexX39w4xjmKg1en/URI2o2gJeAcBMCfIHfdQsGnK8Ix/k3Nf+cS/6iUBrBoZPSK9jQDGWK7uQVfugy4FLRR36r99EMtv9v+5z4fi0QrfFAFHDC9TSPelRyfDtTUV0aVbilOpy4OWokqPFUzHbT/t5X5G4hISLhzSCMQ57Z3jnZa9jb1Z391b99faavpa7W8n0bOM+OE8aSSKSaHbOunDsgpXA3IzxnIYuQNPqDtY3bAt07UXn0tJ6p+/GJv72h2opp78xNlr906UScX5CADXgcMj5wDuCRMTk3WFx/s1PD2Dl409+tzw2ssGF5jqeERQv75D/jvkkaoE3S0pJr1x/7yORNpxMhZyqQVkv0PZ7JPDpni/eRW0tG0q9xf37mI9TSONxUwKc2duhvRdXfsvLztjhc7u54E/evmKPa+BNthfcHIh1NyFItf8qWcvzpZ0fnf3MLO/LAs+TZezK+vvXbr+v7f//7tP8jaEexnDKg9YElCeYWcJiGni0Z2zYP/codZ+NaX/H8e1ZI/e9kgL/fq9d3tnZc7++WSzw/01//+90e14spKJ8nV3r/2Y8ojlP7KdV+01f/+X7MLPxgDs45AhcGOcaWFHEN7W0S+Qs1Bnoaqsd8f85761L9SoziMZajSP2+tmmbuOhejV5m/gJaHiC01QTgPLOSJUR94UnOEVb1Csbfan5Vd8rlbLMmkB6G0moTWIp7pDnEDzIdGcBjQ/T3zyfbMC2W+pZuFlEZ9kZiyeKi1m0Qw/zqUme7T7f3bur0/1e9m04EBT0Ji34oNrqeSkA/F/LQAxl4uIMmXS1Hf+cXZ8VGnc3r2vvWWdD68e9e6+MPdNa2pqd1d7SROTdv2i53GbuMB58dpGzwgC7QsMuJ6sGKudpMG3mjsN1884OD3npExo1J9Rb794AtKRI+kUvQlmoeHjLBPgKecJQEjFA05igx4f1DtSzGCte1Q2qng/WEW6AqhABanl0TIPk24surmc08NypLDUdIHIoE2YYPg/ef2YRIxGsJNA54SLQiQVaIiIC3S9UR19vOFIjyBH0dCXsFegi4pr+z++pe/k54ERB9AM4HIQBFOI5ok/i1wI7wkkyyE/pt3QzswMuPKwMEF4yBiCoagteTYcQK6ST8RSvNA2ZGlIuLBmIRGZ34OunMEE4QtxrB2mbFZ+cYZmrlw1sakTzno3Ph8N+MRdMvq42qsNIsV0QOqiQpAd39ODvBZmGC4WVWhB2buNVcMhk3QHikT2GanMOP9SHRpRFI6liKKcKgaR+I6avQqEtGuyCRBD13EcYzPPxO4Go3P4GW6G7k/jvy60e+hbQ3s+set8BPFF42QX+7seENBNzoQEmnCfBPptWyPZlp4prdjH76RTS64/xZ5YMETErbBnV4BZMBDdnL3Rz4u/0htetpq0xP+RvIQP/bhb1tEdsabew034Q9wuTb1Hm1fHNj/XTeCRcs+aVYHSy76YeO4dbzrR99cYtkXPnHLwi985ualX/BIbWZcaoBCVY9H8Pxx/fjwuLXlmwMUotJPxTsqJ9Mwt1W8iOYGPfu7l4PyEV7bgB/P4hZqhZ4MWxFgX95XlgBK5Pc4QbWAJ78EC29dL+kx55o79XmuuVNfimtu17+7A7jmgOps2l91mpYxAyywvTeWs70fQzdAELzkMatqUT3hki2YqNoEJUqsKLHicWNFc7fEioUT81aMACou2C8sMAL4BYj2JViUYLHRYFEKFtc4EUEzr4J6bEQK0qFDVJ1LtCjRYpPRYu9ZCRaL5uUPaKVFy+bJBTnKDZrXo0XN2i5qudmq9MQsR8Rf0BPTPrs4Iu2zd+dHl0fv26dHnc+0Zu7sLJjB0pj5jRszmz7MbOryfjMH0PuZJ/Nml5YLjnaPXhwd5ACwxEIufOKWpVz4zM2LueCRG+WClyBGHNxDLtifloXm9sbubXLB/oyYM7+7ZuSCWe6/dp7G+0eJAN/ycZ2fK+P6vbAhtLzpVLqMt/j+dPn73BN77r2t//xHIbIYv3WywOQaiWTqppPcUTv16M8XxAj3Jr8Rn9b0ig1EBOtJ2iJRWaTh1ltFtxLdS3T/ZtDdRe63gj9lXJnggxLkS5BfG5A/zqKo2sb4GHLBAplxPQHnPKrmxAa+wMVzmrCI2P6ZECC8eBSnkRgDhh9ImoTuzjaN00xBoy59G69dsB6TkkYYF9SXNFaFGw8lH7IbjHwl9pfY/61hv0vPaiU0GmOoWYn8JfKvDfK38mBIQ5+KGzS2UF89zhIE+ncM7gnMDz+fn5JLSYMrh+8XTAOjwMfzpES4ekg1rRooT0BLCLjRDN7Rq1KsL6H9UUG7k3nYUi6HEt1LdF8xup8lXUGlEcYn1przQkz8O5rQPvPCfptKBgL8OeZfWXw/Svr+96K0/gZofWgaOAFZP/I3f+K60GIJ9SXUPx6oP7koFFgoQb4E+bUB+XObtNSWLLfF2PSgtzY9qJ2nBxn0P+uczFz6yJIQ+jfDC4TS5D3rC83zZs9dMlInS1MhzW0nF+86pBXGPOEmU8vd2R7QpD/LXo6/p3H6+ph0mNZRySJKFvHoWMRph9TIpRBRySFKDrE+HOKAxl0hQIIxFptYaMsJaErHlLyxiaZGqmdje9NHUGavgKtc4ZdLGg05G+FHwPqjTwGLyJNzPhQafuqalNqPb8/Ofv5w/rSMt/uW4u2mKh8c/dv50cXp0fv20a1RdwtqhZl9hUM1hb7yqLja6PpKX8294pqs0fQv5gvN7fl5tteWUR3m6ib8+pe/+XJuRiq6Trm4MWrxTjV0vuykvcQCcfOVYhbUPmwsV/uwlfVJs97cNjN1jpcXiou3FUCcIrK1IbFr6urcfyv/LhuCwP/kyPwAYrvGAgrq6WrJY5og2q3t1vEDMjFb0/ArjugrVMkr12r5EXH7/6Lt9uArh0VRjAhlK5tUIxZiSRQjRFlxyoK6NMJWtcclKNN5TZNbYSzt6HHEfJ/egmYNbIP2JU0HtstJFts7eTSMclDJfzsNcw7lhpM/MIeQO/tFhNzZXy1E+n72aKTYlgfMBVe/bEmco7jLwhBjXC4OzglMRbGGTSUvYGMXNeflWcJhPrAuTWq5OjRgCuAAr+LQhqt3g3VoApEMmdTkTxmWvpbRuFDrZm14+INXT6Imy9dWzZkq2mOr5bhKOlLQMKbpimssrQvpVQhLVGbrFVl5UGVpCgRCMUbWU1RoKxGNieYxfATyu73UT4kiK17KC2brP+kBg0UNsRoG/CGaBYOEB8AUHMH3JI0ZcoNXCAAGW2CdHy8MYH0qjBMJxtUuVTBUFQCZBFSGarZyV2oiC4NCZKGygeUbig6GuwSZhikBGTHEamkyr54gTfG08fpQzoOrNbOFNDZn3XFf8DiVYgi7AqQGPHypKnrVAebCI0vgCQElzwsUJTtYvzU8S4FZc8S7GFNaqsGAmnA6JTJppuuJdJHQqkLemhq4p0mFtC47FS8KpDy13P6pAQJAyPViFQ++4bWrImXIHKBtturWxhCPAYDHu86Br+3hF3q2CsrGLDQaCVw+BM6FIn3JRrbQ6feRft2of4f6I+yDZ1jdQAtABhJEAlSGUgdYw+U8TQLJjJArerCsVRoELNUm0sKIa2ZhH+++fgHk+utf/5Ps72/odgblT4qsP8CKyWj+GLKC6M7yaMqKKdoLmr9VcrqgHA3wvE1jbprViRArDTWRJJPa2ArKnb92K28DbGG9cPkwTAoxADU3PD81GVdHPGRYncbUmOYA9E+sddjYhStoLByyCjk/Pa8AC/DhtbD+WKabRlYA9JWetbUKTVWBjujIvNorz/B6YBx0fcDmwe0KPehUFQtrIzG6CuVTlck3E4JKbFi7JTkwdkGK9d65rnKsvWVCavBTFPG+Kb6f2gB7s9EL8I9nMMKmTvFbhSjWR/7h2MaYaEbjmmbAGFgNBQ+4ahwS1mFubQfO4/B4gcBlWJ5CL/oDGIdkGJ5qHC+TMwc2EwzQvUC7HiGdRCLzrD1LivaLInaX4o3dCE8uYAiuyElKSFm7hT1E0yBhPgGtcIhH6hN1nohJ+g8giZFPKiQ2MdkSD7BghhyML9PEiwxEqiokzWAIBBTMIRurp+i61JJ3M+2O1CgchWEPvuDJI4YW9v68Y8Sql/VqSMeTrbOZcFICweIImgefaJs5EZrDYIiYnOzqTuixUbyV6RjeCvGBvlaHdPG8KA/EsFM1/DMuNpvEQYMAtnEwrlgJAzkB6B167PVPqjM8lq5wuowJjKCkz4RZTnRpglgRYuIH4gP6qn2IS0kna7d1O/iHUPWIwfoUpZmERpjfFHOtgS8+OW0/BZYVd4HjZQmWGEPvvEmCagV6M0HcIAIeQRVZ40MaYdDoALafUiZXy2x5RAxl7QwgAvR4iHzP+CHtUVlSBCzM0G4teV9k8jXeZlTwHuWyYiJVql2RoSMzGTKled9hWB7w0ssAhwr4YoOncuQ5bRMQRP1jJaSsHSGdjZJioMvjBRbgokObJBkvTm/fmCV31gUeU9igqQCMQLcU6ggUdz68+T3NriSvkE6KexwziXpj8uTgzcenVrII8MC7HggPuKtrAeikptiAC6FUr0n0qD3cKuuqQPLUqN/oBiXJJMnWxkMZjctMJwdmttG2TCAZIA+GRz8UFU8zbyYaws7aaMDhqhdy8WZ8ngNLcaEzZl47b1vIXZIQI89KdrJ2i20qRq3P1n/4OEhb4xAEnhhDx8cFf+Bm7m7URhD3kYUwXz6y68tHGikzAwEwgK3u60daL5iVM9eGUh6cScQiuCK5m0AZvgq/Vg1DMCcSA5BlKJFvalws1V5iAHKIItbHNGQMvzakwxNQN0CLwOyDaEI9A57643i1hM0HqmBio7WpjMbVmaC7zz1Md38Rit/jXPgy3Xbq2hKGDpN9c3rpa9kCjTxpO5lqYUrk5mXX/jZLMLu2abJr34uh+XJ3et+U9NqPXOpMlSmaDzmiMp12rddqlem0LmcWENupba4IbX9QHYooi1ke3WMzMNkkOdPlVJXK3LpJaGcjdDahhbcamMLysLqyUFseBXkTDCtZfiYCirz0ihnJ/xfRJVSC8q+ZCYRB17MNggRxDiNsrSoQCSwU84hVgd36MxsYvqmCvnV4OgCoFPd+hfyu5WyKkciQ2BJvD7IJUpTsVWOYmkFuUiutPmu3whcuqYkOGcwz80myFjQeebh8c5eEdKxMyHzjhfm8odu8O8Z0R1sV0rkDKKj10cQKQlQwAFKJzMZHY4gx7fY4xjnPZMtZUGjuVAcYGN1jLOzS4Artv86h6WjMhUKVtuD1I4hDZsyBa+QJenBz8KTIHlKrr7JnYmzUOAkKdQOowiz4eIPNfVZaZMgmUhAFPvGYarZOMc0Pzhoa9Wk1B5AMpCAQf0eMXW0oFVg3n02LN06+AEgiwfCDCZewlXbMiSPO91ei+2IzxZfKcigmvE2ikvOiJ7P5Dc4dZuMBQMvLgoGJK1BW+LM6Hyh/h3RMGpM0eBvRzqq/COvwDaVIMd0qtKFFidA8YJhizEVI+jQtmfz6beijTywwcaPOM+rEstAcAme4YiG66ODNRxt0hszwdTGidY1y3B6cDXzf169f1r9z2cQwFZ7eCziHyX4byhGcdQB9eHnUjM2GKrf7ilD/fLr23YxqZXaxi53zIV42i4RpYmwzIMVpKvtMY2QEdF5hggVcNK39mUnh05CQ1PGgsbct0pWMgja4BKaXLtp1dNGeXJS+2RtSPyS6YxvGN3vIAvOl9M1eS0vtt+QSVWV4S5+v2k7++Bx/pZP221mrVTppj4XUWcLIbr2OvjxX1sKcCmHKm3nvi5cAnGg2v84bLYuti+Scq14FD23RPetWb2247Bewrz1DMs59hhuqQNnkUJtr6gsTVnwZViEwedxI3jcWLLI2mklqjPW/hCLIJrUqTAgrw2MnDXkV0xyMe7vU19aOOEzGaIhB2qhf2wN55nN+1g0pHtxP09h95nma2RcLddqNho/cEjdR4GfMugENjRXYBF/ndW0Xlsiz0+tLnR7ScbVBElFVAzEqQWL9SOAtmypW93hhIKYqt1AzLJljCXVEo6sqT5zRekNhYOBPgV6b5f8C8iIIjLlny7piDRls5pK/zqVGKyvSKBKBkxQlo1EV0/9tLj+IDyDmTUpbTtyD0zwCJUQVC6EHFdhnk9hfZlQVuKNE/xWZ9G1tqZDB61gvT5l1iciLzfwoCBQOsygIAgzenDkpQKLBl9PcbcNorCoTf67x4lctQfEkbyMYF8rhm7oReJ6SK4k6Kz2URLJ2WOGrH4ab4rT18YhCRKgp7SLrwFgFG6/CChC4qQJDDgDBgIQiNnXkTFwI7yemOIRxAXolID8xAas5msIyhllIljKqbQKBNIaHcvevikX4+mQJG9ka/oVag1OGn4o9It7UGINr0tUXK1T9SSnIUnlkkCkOBA0bz2/hLgzh8WQDwoYrlu+ifZZ1+Zfe4HX0BpeZujfJYsYB3HhpvMG/pUnpDb6ZlpIesBPNA/Q8Bc9XSxePz8FYOoO/nbVapTMYU3U17fUQY/xRtxPnIZ6Mu9jVY0oNzhW82Wg5bV1k8kN7xCibCrpd4BKGpcejbDExRU25D9FJZCo6OttAxHuskMX320OCR+MYQ4DRBRcfipan+RbKormEYBv4CosUw/xpPEIDtYC1Yf0PbnG+xl0qRbTpeqOhHSz5H0TcWOIVx0swWSJTUZnxsX4r1/axBD5OeG227YOLoPvPSudw7hxmICZ0I64GzNRfrBo3WYLeE4PjxifsvAMI/ankQgK2K2ZdAGPOooL9x3GLoouYhCyF2TZWYuAUkRhVC6kRIG9ofFFpGFo/+jhkQxaJ1NiCEx4MWFVdcSwInfuH0GiEJ0bbsAFvDfRnhKqBkBpIS2Py+KakhTbr3xVtn9oHPo83WiwAAigWf6UgexpHka8IgFZ4NMDbRGpmqpf3eFR6i1ZmL8YwkduCJ6xgUNA+MKBfGVuOGCX2FCfDVIxtuJgHNOVYmtiI3XFHMfovS9fg6hYbU8J4wFMj7cHyWil9qg5nIVrULGmYa5+Y3w4Qbk4xwpOJ/GFeXgdE95ltDzTQyCSTSdbDTT7xSZvlrswdXYQihXu4OjkDy8oSBk67mcL6ISWlrIpSTswpFC4SkERMowsAfsbyL9Z75J1JaHTIy8ZXrrUIFF1IlChG4wiJ6JqUdBEX4wd8knnpR/o2/UgnF+RSIhNYmA29ea6jVtafuI5skdfGy9J1dG2Yyoc//pH8Hs/BIx0RZV8hK+Tx+SRK/9G3s1ar9B8BVCu/xzCcL8bxHuNhUdQVAp12PSR4El7hHLxSPluNfNZSJgQznFPNiqtTzBMzAlj7oyvNZGJ+F1fwuyYK2Ep2eck+rO3vXEBOrfMn2OZFY0thfdUxX7ATp3P7rAYVABVUrxhLcT5mEoPsYZOw2MbqYixYCRCECeKCJQexH3a+PfAeVX7Q9S0hTM63HeZRxPZN5txZY9sxpMn90X+ds/OSIlZFEZ0sReUcjbLS2d4mNht7VMvE7YOmN1y/IgqYxzCKe0h5RLs8MgeQohVXcljM/GzRHBlA79HV/GVTOMGCPI0AoxKNrUACYbhTovJzkUvqWBF1tL35BelDFCNElaUbf1Q9aPs2lNQAArniWlUKCwf0Elyhod+BgkD93UFPCD+p10WV32SQuLzBorIvTL6OHJv3eFxZghYOQvM3Yj3tx29TYc3E4wTmugjBaUId23yy05EvqGtnjgD2p2wHzaYjI47mUfPWtVLap7SufCjmpwUC4mfUJzj80G5dnp69v3WBHshK0pyy4KzNfF9jJKnPT2yzvhwTP2gZe8BJFtOEXDDjW2Xk3cQca+O5jgG1Yd+UlhTrdWvsmVmDD/t3t6BMY/xqaevL6nGXXGZDCkp4TKPFiviqtuzj3bEH6OLCF4ieOdia4X59cvAcPhuadDvV7dtWEIAarVUZPu937rbfuXufadcvN24pDH0VYah9dHF5enxqBaLOiuB1e+dbkog+73DvgvTTLh5P/ZiM5cTalMmHkMXjx8Qc7j8lzXpzZ0W76SsyklXupUMOenVM0Tb3lnbx9JW3dKScaNLBahBagArezvM6yx1W7rBSqvgqUsXb1vs3H1pvjm4XKG4Jd1mbmXtwOLukMY/WD6Lurw4R8uQ9RQ/aU0I8XK3az7zKBTwCFOFq8MiW8DjKfNzkkMkujSpkJDk60RynxfBm622h0bR/9enCza5YoB0W9zvYyRF0pwnMwAwRPu/u28/W9A7dERKdMNqOIu1jzXJoV6QAB01zp5GRgKPULVYIrUWc/2gx1/02YDREUHlRN2aynhC68LWfaQc57lXvs/hynDLzLRTBG8kNivOEnXMdQGe3cyj3w6phB8Kx+eA9lz/9P1BLAwQUAAAACAAjaMtcvcP+UbcBAAC1CAAAEQAAAHdvcmQvY29tbWVudHMueG1spdTdboIwGAbgWzGcawGVOaLbybJlx9suoGurbUZ/0lbRu1+ZFti6GKhHauj38PaVsn488mpyINowKTZJNkuTCRFIYiZ2m+Tj/Xm6Sh4f1nWJJOdEWDNx64Up0XGTUGtVCYBBlHBoZpwhLY3c2plbC+R2yxABWMPaUSBPswVAFGpLjklrZKORJbgHqxDKI6AsBXkWUvPRVAGaVAG0iIJcqkBaxkn/bK6Ik/JQuouT5qG0ipOCx4mjAJKKCHdxKzWH1v3UO8Ch/tqrqYMVtOyTVcyenJkWnoFMfEUkclOtwOd4tHAHuMSkmmOvyE2y16K8zE/b+SZ6eZ6/fPgJPWT/55EnifbNcf7ZOdCkcl1IYShTpq0zVnMXqUcO1zZx4JVfV6ts4HGppcZNX+nPN6UlIsa4Dp/OVXbgkPiX/nl1Tn5dzNIB/0hDtBNDIvy+p0/C3VPY3Tiqml652cAXiAfyACgQGfjC98bqYgDUndDGYQOPhneK1mG458SF6QEGW0xHKbnvFTSz0EIKDe2LZFyoZcudeK8jtbvtILxouVedxm7TXrvXWi3GbTAt/rauzG1h3ihUJAEP31BLAwQUAAAACAAjaMtcZ0SBipMBAABiBQAAEQAAAHdvcmQvc2V0dGluZ3MueG1spZTLTsMwEEV/JfK+dVJRhCIC4iEeC8QC+ABjO4lVe2zZTgJ/z6RpGgoSaunKTsZz7vVMMueXH0YnrfRBWShINk9JIoFboaAqyNvr3eyMXF6cd3mQMeK7kOB5CHnneEHqGF1OaeC1NCzMjeLeBlvGObeG2rJUXNLOekEXaZaud85bLkNA0A2DlgWywZnfNOskYLC03rCIj76ihvlV42ZIdyyqd6VV/ER2ejpibEEaD/kGMdsa6lPywdBmGTP8PrpDyq3ljZEQ14rUS40eLIRaueka/6VhsB4h7V+XaI0m2xZkJ8f14NazDpcJuI99MSQZPTj/m5ile3SkR2wz9rGwqzk6MUzBJPyv0nwrbrY8DLD4CXDVcc2597ZxE00dR3uE1ZYF8iDWpsnfrxaOM/NSM4d/oOH5YwXWs3eNjrBlCVY96T9r0k8coYLT7POa8VWFtQCxTqN9SLYSrkA8C/EgmcDhlXR5y3RBSqaDJOszw5SYdi/DABtPZkuCW2AGpXcGypMVsg81/oCS95J00qTTvLz4AlBLAwQUAAAACAAjaMtcK9cB4hIBAAAyAwAAEgAAAHdvcmQvZm9udFRhYmxlLnhtbJ3R3W6DIBQH8Fch3FfUrKYxtb1Zlux+ewCKqKQcjgE627cffs6kN3VXSPD/y/k4nu+gyY+0TqEpaBLFlEgjsFSmLuj318fuQM+nY5dXaLwj4WfjchAFbbxvc8acaCRwF2ErTXis0AL34WprBtxeb+1OILTcq4vSyj9YGscZnRj7ioJVpYR8R3EDafyQZ1bqIKJxjWrdrHWvaB3asrUopHOhQdCjB1yZhUneniBQwqLDykehmamigQrxJB6+QP8B+21A+gRkQt63GYfJYCG5dlS5zckWR5Ur53/FrABX+rLZpKTzXFmf5Z433DVrUW4rar9wD+hnBCL/rA1aftFBClsnYXFkgMk4uf4g4zLI3AJlp19QSwMEFAAAAAgAI2jLXM/h58LCAQAAnAYAABIAAAB3b3JkL2Zvb3Rub3Rlcy54bWzVlMFu4yAQhl/F4p5gR+1qZcXpYauuequa3QegBMeowCDA9ubtd2wTnO1WUdqcejHGzP/NP4xhffdHq6wTzkswFSmWOcmE4bCTZl+R378eFt/J3WbdlzVAMBCEz1BgfNlbXpEmBFtS6nkjNPNLLbkDD3VYctAU6lpyQXtwO7rKi3x8sw648B7pP5jpmCcRp/+ngRUGF2twmgWcuj3VzL22doF0y4J8kUqGA7Lzb0cMVKR1poyIRTI0SMrJUByOCndJ3klyD7zVwoQxI3VCoQcwvpF2LuOzNFxsjpDuXBGdViS1oLi5rgf3jvU4zMBL7O8mkVaT8/PEIr+gIwMiKS6x8G/OoxPNpJkTf2prTja3uP0YYPUWYPfXNeeng9bONHkd7dG8JpYRH2LFJp+W5q8zs22YxROoefm4N+DYi0JH2LIMdz0bfmtyeuVkfRkOFiO8sMyxAI7gJ7mryKIYA+34eHLD4C3jmAEDWB0Enu58CFZyqHl1kybP7ZCStQEI3axpkk+P+L4NBzVk75iqyEN08yxq4fCKFFEYg+t5OX5PuGQ7LdDRM51V75bLwQRp2vGW2b4tPf8Klb9bwbldOJn4zV9QSwMEFAAAAAgAI2jLXD9Kjo3BAQAAkgYAABEAAAB3b3JkL2VuZG5vdGVzLnhtbM2U227jIBCGX8XiPsGOutXKitOLHla9q5rdB6AYx6jAIMD25u13fAjOtlWUNje9MaeZb/6ZMaxv/mqVtMJ5CaYg2TIliTAcSml2Bfnz+2Hxk9xs1l0uTGkgCJ+gvfF5Z3lB6hBsTqnntdDML7XkDjxUYclBU6gqyQXtwJV0lWbpMLMOuPAe4bfMtMyTCaff08AKg4cVOM0CLt2OauZeG7tAumVBvkglwx7Z6fUBAwVpnMknxCIK6l3yUdA0HDzcOXFHlzvgjRYmDBGpEwo1gPG1tHMaX6XhYX2AtKeSaLUisQXZ1WU9uHOsw2EGniO/HJ20GpWfJmbpGR3pEdHjHAn/xzwo0UyaOfCXSnNU3OzH5wCrtwC7u6w5vxw0dqbJy2iP5jWyjPgUa2rycWr+MjHbmlm8gZrnjzsDjr0oVIQtS7DqSf9bk6MXJ+nysLdo4IVljgVwBLdkWZBFNtjZ4fPk+sFbxjEAGrAqCLzcaW+sZJ/y6iounps+ImsCELpZ0+g+fqb5NuxVH71lqiD3o5hnUQmH76OY/CZbEU+n7QiLouMBHRTT6PRRqhxMkKYZHpjt27TT75/1h/pPVGCe+80/UEsDBBQAAAAIACNoy1zgI1DriQAAANUAAAAQAAAAZG9jUHJvcHMvYXBwLnhtbJ3OwQrCMBAE0F8pubeJHkRK016KZw/Ve0k2bcDshmQt9e+NCH6Ax2GGx3TDHh7VBil7Qi0OjRIVoCHrcdHiNl3qsxj67pooQmIPuSp7zFqszLGVMpsVwpybUmNpHKUwc4lpkeScNzCSeQZAlkelThJ2BrRg6/gDxVdsN/4XtWQ+//J9esXiyf4NUEsDBBQAAAAIACNoy1yjghswLgEAAHICAAARAAAAZG9jUHJvcHMvY29yZS54bWyVkkFrwyAYhv9K8J6oCWQlpBa20dMKg7Vs7Cb6tZVFI+qa9t/PpG2asV521Pfx4f3UenHUTXIA51Vr5ohmBCVgRCuV2c3RZr1MZ2jBamEr0Tp4da0FFxT4JB4zvhJ2jvYh2ApjL/aguc8iYWK4bZ3mIS7dDlsuvvgOcE5IiTUELnnguBemdjSii1KKUWm/XTMIpMDQgAYTPKYZxTc2gNP+7oEhmZBahZOFu+g1HOmjVyPYdV3WFQMa+1P8sXp5G0ZNlfGBGwGI1VJUwgEPrWMbkxquQdZ4stlfYMN9WMWL3SqQj6cJ9zfrcQcH1T8KowMxLuvL0Gc3yCSWrc6jXZP34ul5vUQsJ3mZkjKldE2LipCqyLPZrPzsq/1y3KT6UuLf1oeJ9SphQ/PfH4f9AFBLAwQUAAAACAAjaMtcOqM2z4gAAADTAAAAEwAAAGRvY1Byb3BzL2N1c3RvbS54bWydzsEKwjAQBNBfCbm3iR5EStNeimcP1XtJN23AZEN2W/TvjQh+gMdhhse0/TM8xA6ZPEYjD7WWAqLF2cfFyNt4qc6y79prxgSZPZAo+0hGrsypUYrsCmGiutSxNA5zmLjEvCh0zlsY0G4BIquj1idlN2IMVfpx8us1O/9Lzmg/7+g+vlLxVPcGUEsDBBQAAAAIACNoy1wfo5KW5gAAAM4CAAALAAAAX3JlbHMvLnJlbHOtks9KAzEQh18lzL0721ZEpGkvUuhNpD5ASGZ3g80fJlOtb28oilbq2kOPmfzmyzdDFqtD2KlX4uJT1DBtWlAUbXI+9hqet+vJHayWiyfaGamJMvhcVG2JRcMgku8Rix0omNKkTLHedImDkXrkHrOxL6YnnLXtLfJPBpwy1cZp4I2bgtq+Z7qEnbrOW3pIdh8oypknfiUq2XBPouEtsUP3WW4qFvC8zexym78nxUBinBGDNjFNMtduFk/lW6i6PNZyOSbGhObXXA8dhKIjN65kch4zurmmkd0XSeGfFR0zX0p48jGXH1BLAwQUAAAACAAjaMtc0nf8t20AAAB7AAAAHAAAAHdvcmQvX3JlbHMvZW5kbm90ZXMueG1sLnJlbHNNjEEOAiEMRa9CuneKLowxw8xuDmD0AA1WIA6FUGI8vixd/rz3/rx+824+3DQVcXCcLBgWX55JgoPHfTtcYF3mG+/Uh6ExVTUjEXUQe69XRPWRM+lUKssgr9Iy9TFbwEr+TYHxZO0Z2/8H4PIDUEsDBBQAAAAIACNoy1ylNFBKRwEAAPgEAAAcAAAAd29yZC9fcmVscy9kb2N1bWVudC54bWwucmVsc62Uz27CMAzGX6XKvU3LP6GJwmWbxGGXiT1AaNw0apNUcVhhT7+gUSgTq3bI0Z/jz79Yllebo2qiT7Aojc5JlqQkAl0YLrXIycfuNV6SzXr1Dg1z/gVWssXIl2jMSeVc+0QpFhUoholpQftMaaxizodW0JYVNRNAJ2m6oHboQe49oy3Pid3yjES7Uwv/8TZlKQt4NsVBgXYPWlB0pwbQOzIrwOXkJ068D6GP209CttcHtQfr53gjuEpjENOQEKUxThs3HMNVGoOYhYQAzX8x9MoYwjzoLoBzfu7DbbgoYwiLkAiFUefUAKFXxhAwW4qTLPEoauwUV5Zj+xUSq/JOtpG6vnGdbdH7dl2XnDPgr0HiYanUFJmrJFZxfVDMxiKep9PZfJJN0778zXBP9nJ0YDX781vLsEuu3Y7tGxgu+UXqZ0vvTtj6G1BLAwQUAAAACAAjaMtc0nf8t20AAAB7AAAAHAAAAHdvcmQvX3JlbHMvY29tbWVudHMueG1sLnJlbHNNjEEOAiEMRa9CuneKLowxw8xuDmD0AA1WIA6FUGI8vixd/rz3/rx+824+3DQVcXCcLBgWX55JgoPHfTtcYF3mG+/Uh6ExVTUjEXUQe69XRPWRM+lUKssgr9Iy9TFbwEr+TYHxZO0Z2/8H4PIDUEsDBBQAAAAIACNoy1zSd/y3bQAAAHsAAAAdAAAAd29yZC9fcmVscy9mb290bm90ZXMueG1sLnJlbHNNjEEOAiEMRa9CuneKLowxw8xuDmD0AA1WIA6FUGI8vixd/rz3/rx+824+3DQVcXCcLBgWX55JgoPHfTtcYF3mG+/Uh6ExVTUjEXUQe69XRPWRM+lUKssgr9Iy9TFbwEr+TYHxZO0Z2/8H4PIDUEsDBBQAAAAIACNoy1zSd/y3bQAAAHsAAAAdAAAAd29yZC9fcmVscy9mb250VGFibGUueG1sLnJlbHNNjEEOAiEMRa9CuneKLowxw8xuDmD0AA1WIA6FUGI8vixd/rz3/rx+824+3DQVcXCcLBgWX55JgoPHfTtcYF3mG+/Uh6ExVTUjEXUQe69XRPWRM+lUKssgr9Iy9TFbwEr+TYHxZO0Z2/8H4PIDUEsBAhQDFAAAAAgAI2jLXKCOjqWaAQAAOAgAABMAAAAAAAAAAAAAAKSBAAAAAFtDb250ZW50X1R5cGVzXS54bWxQSwECFAMUAAAACAAjaMtcFnTCzBADAABBEQAADwAAAAAAAAAAAAAApIHLAQAAd29yZC9zdHlsZXMueG1sUEsBAhQDFAAAAAgAI2jLXLgpKurGAgAAvg4AABIAAAAAAAAAAAAAAKSBCAUAAHdvcmQvbnVtYmVyaW5nLnhtbFBLAQIUAxQAAAAIACNoy1x/0S03sRoAAIwRAQARAAAAAAAAAAAAAACkgf4HAAB3b3JkL2RvY3VtZW50LnhtbFBLAQIUAxQAAAAIACNoy1y9w/5RtwEAALUIAAARAAAAAAAAAAAAAACkgd4iAAB3b3JkL2NvbW1lbnRzLnhtbFBLAQIUAxQAAAAIACNoy1xnRIGKkwEAAGIFAAARAAAAAAAAAAAAAACkgcQkAAB3b3JkL3NldHRpbmdzLnhtbFBLAQIUAxQAAAAIACNoy1wr1wHiEgEAADIDAAASAAAAAAAAAAAAAACkgYYmAAB3b3JkL2ZvbnRUYWJsZS54bWxQSwECFAMUAAAACAAjaMtcz+HnwsIBAACcBgAAEgAAAAAAAAAAAAAApIHIJwAAd29yZC9mb290bm90ZXMueG1sUEsBAhQDFAAAAAgAI2jLXD9Kjo3BAQAAkgYAABEAAAAAAAAAAAAAAKSBuikAAHdvcmQvZW5kbm90ZXMueG1sUEsBAhQDFAAAAAgAI2jLXOAjUOuJAAAA1QAAABAAAAAAAAAAAAAAAKSBqisAAGRvY1Byb3BzL2FwcC54bWxQSwECFAMUAAAACAAjaMtco4IbMC4BAAByAgAAEQAAAAAAAAAAAAAApIFhLAAAZG9jUHJvcHMvY29yZS54bWxQSwECFAMUAAAACAAjaMtcOqM2z4gAAADTAAAAEwAAAAAAAAAAAAAApIG+LQAAZG9jUHJvcHMvY3VzdG9tLnhtbFBLAQIUAxQAAAAIACNoy1wfo5KW5gAAAM4CAAALAAAAAAAAAAAAAACkgXcuAABfcmVscy8ucmVsc1BLAQIUAxQAAAAIACNoy1zSd/y3bQAAAHsAAAAcAAAAAAAAAAAAAACkgYYvAAB3b3JkL19yZWxzL2VuZG5vdGVzLnhtbC5yZWxzUEsBAhQDFAAAAAgAI2jLXKU0UEpHAQAA+AQAABwAAAAAAAAAAAAAAKSBLTAAAHdvcmQvX3JlbHMvZG9jdW1lbnQueG1sLnJlbHNQSwECFAMUAAAACAAjaMtc0nf8t20AAAB7AAAAHAAAAAAAAAAAAAAApIGuMQAAd29yZC9fcmVscy9jb21tZW50cy54bWwucmVsc1BLAQIUAxQAAAAIACNoy1zSd/y3bQAAAHsAAAAdAAAAAAAAAAAAAACkgVUyAAB3b3JkL19yZWxzL2Zvb3Rub3Rlcy54bWwucmVsc1BLAQIUAxQAAAAIACNoy1zSd/y3bQAAAHsAAAAdAAAAAAAAAAAAAACkgf0yAAB3b3JkL19yZWxzL2ZvbnRUYWJsZS54bWwucmVsc1BLBQYAAAAAEgASAKUEAAClMwAAAAA=";
+function downloadResume() {
+  try {
+    const bin = atob(RESUME_B64);
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    const blob = new Blob([bytes], {type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'Sathish_Kumar_HRBP_Resume.docx';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch(e) { alert('Download ready — right-click and Save As if needed.'); }
+}
+document.getElementById('dlBtn').addEventListener('click', downloadResume);
+document.getElementById('dlBtn2').addEventListener('click', downloadResume);
 
-/* progress */
-window.addEventListener('scroll',()=>{
-  const p=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100;
-  document.getElementById('prog').style.width=p+'%';
-},{passive:true});
+// ── AOS ────────────────────────────────────────────────────────
+AOS.init({duration:750,easing:'ease-out-quart',once:true,offset:70});
 
-/* nav solid */
-const nav=document.getElementById('nav');
-const links=document.querySelectorAll('.nav-ul a');
-const secs=[...document.querySelectorAll('section[id],div[id]')];
-window.addEventListener('scroll',()=>{
-  nav.classList.toggle('solid',window.scrollY>50);
-  let cur='';
-  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});
-  links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
-},{passive:true});
+// ── NAV ────────────────────────────────────────────────────────
+const nav = document.getElementById('nav');
+const navLinks = document.querySelectorAll('.nav-ul a');
+const sections = [...document.querySelectorAll('section[id],div[id]')];
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('solid', window.scrollY > 50);
+  document.getElementById('prog').style.width = (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100) + '%';
+  let cur = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
+  navLinks.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + cur));
+}, {passive:true});
+document.getElementById('burger').addEventListener('click', () => document.getElementById('navul').classList.toggle('open'));
 
-/* burger */
-document.getElementById('burger').addEventListener('click',()=>
-  document.getElementById('navul').classList.toggle('open'));
-
-/* counter */
-const nums=document.querySelectorAll('[data-count]');
-const io=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(!e.isIntersecting)return;
-    const el=e.target,target=+el.dataset.count,suf=el.dataset.suf||'';
-    let v=0;const inc=target/80;
-    const t=setInterval(()=>{
-      v=Math.min(v+inc,target);
-      el.textContent=Math.round(v)+suf;
-      if(v>=target)clearInterval(t);
-    },16);
+// ── COUNTER ────────────────────────────────────────────────────
+const nums = document.querySelectorAll('[data-count]');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target, target = +el.dataset.count, suf = el.dataset.suf || '';
+    let v = 0; const inc = target / 80;
+    const t = setInterval(() => {
+      v = Math.min(v + inc, target);
+      el.textContent = Math.round(v) + suf;
+      if (v >= target) clearInterval(t);
+    }, 16);
     io.unobserve(el);
   });
-},{threshold:.6});
-nums.forEach(n=>io.observe(n));
+}, {threshold:.6});
+nums.forEach(n => io.observe(n));
 
-/* hero photo parallax */
-const hp=document.querySelector('.hero-photo');
-window.addEventListener('scroll',()=>{
-  hp.style.transform=`scale(1.06) translateY(${window.scrollY*.22}px)`;
-},{passive:true});
+// ── CANVAS HELPERS ─────────────────────────────────────────────
+function setupCanvas(canvas) {
+  const parent = canvas.parentElement;
+  canvas.width = parent.offsetWidth;
+  canvas.height = parent.offsetHeight;
+  window.addEventListener('resize', () => { canvas.width = parent.offsetWidth; canvas.height = parent.offsetHeight; }, {passive:true});
+  return canvas.getContext('2d');
+}
+
+// ── HERO: Network graph (teal nodes + connecting lines) ────────
+(function() {
+  const ctx = setupCanvas(document.getElementById('hero-canvas'));
+  let W = ctx.canvas.width, H = ctx.canvas.height;
+  window.addEventListener('resize', () => { W = ctx.canvas.width; H = ctx.canvas.height; initPts(); }, {passive:true});
+  let pts = [];
+  function initPts() {
+    pts = Array.from({length: 70}, () => ({
+      x: Math.random() * W, y: Math.random() * H,
+      vx: (Math.random() - .5) * .4, vy: (Math.random() - .5) * .4,
+      r: Math.random() * 2 + 1,
+      pulse: Math.random() * Math.PI * 2
+    }));
+  }
+  initPts();
+  let t = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    t += .012;
+    pts.forEach(p => {
+      p.x += p.vx; p.y += p.vy; p.pulse += .02;
+      if (p.x < 0 || p.x > W) p.vx *= -1;
+      if (p.y < 0 || p.y > H) p.vy *= -1;
+      const alpha = .4 + Math.sin(p.pulse) * .2;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(45,212,191,' + alpha + ')'; ctx.fill();
+    });
+    for (let i = 0; i < pts.length; i++) {
+      for (let j = i + 1; j < pts.length; j++) {
+        const d = Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y);
+        if (d < 110) {
+          ctx.beginPath();
+          ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
+          ctx.strokeStyle = 'rgba(45,212,191,' + (.15 * (1 - d/110)) + ')';
+          ctx.lineWidth = .7; ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── METRICS: Floating aurora orbs ─────────────────────────────
+(function() {
+  const ctx = setupCanvas(document.getElementById('met-canvas'));
+  let W = ctx.canvas.width, H = ctx.canvas.height;
+  window.addEventListener('resize', () => { W = ctx.canvas.width; H = ctx.canvas.height; }, {passive:true});
+  const orbs = Array.from({length: 5}, (_, i) => ({
+    x: (i + .5) * W / 5, y: H / 2,
+    r: 60 + Math.random() * 40,
+    ox: (i + .5) * W / 5, oy: H / 2,
+    phase: Math.random() * Math.PI * 2,
+    speed: .004 + Math.random() * .004
+  }));
+  let t = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    t += .008;
+    orbs.forEach(o => {
+      o.x = o.ox + Math.sin(t * o.speed * 80 + o.phase) * 30;
+      o.y = o.oy + Math.cos(t * o.speed * 60 + o.phase) * 15;
+      const g = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, o.r);
+      g.addColorStop(0, 'rgba(16,185,129,.22)');
+      g.addColorStop(1, 'rgba(16,185,129,0)');
+      ctx.beginPath(); ctx.arc(o.x, o.y, o.r, 0, Math.PI * 2);
+      ctx.fillStyle = g; ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── ABOUT: Floating geometric polygons ────────────────────────
+(function() {
+  const ctx = setupCanvas(document.getElementById('about-canvas'));
+  let W = ctx.canvas.width, H = ctx.canvas.height;
+  window.addEventListener('resize', () => { W = ctx.canvas.width; H = ctx.canvas.height; }, {passive:true});
+  const shapes = Array.from({length: 12}, () => ({
+    x: Math.random() * W, y: Math.random() * H,
+    size: 20 + Math.random() * 40,
+    sides: Math.floor(Math.random() * 3) + 3,
+    angle: Math.random() * Math.PI * 2,
+    rotSpeed: (Math.random() - .5) * .008,
+    vx: (Math.random() - .5) * .3, vy: (Math.random() - .5) * .3,
+    alpha: .04 + Math.random() * .06
+  }));
+  function polygon(cx, cy, r, sides, angle) {
+    ctx.beginPath();
+    for (let i = 0; i < sides; i++) {
+      const a = angle + (i * 2 * Math.PI / sides);
+      i === 0 ? ctx.moveTo(cx + r * Math.cos(a), cy + r * Math.sin(a))
+               : ctx.lineTo(cx + r * Math.cos(a), cy + r * Math.sin(a));
+    }
+    ctx.closePath();
+  }
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    shapes.forEach(s => {
+      s.x += s.vx; s.y += s.vy; s.angle += s.rotSpeed;
+      if (s.x < -s.size) s.x = W + s.size;
+      if (s.x > W + s.size) s.x = -s.size;
+      if (s.y < -s.size) s.y = H + s.size;
+      if (s.y > H + s.size) s.y = -s.size;
+      polygon(s.x, s.y, s.size, s.sides, s.angle);
+      ctx.strokeStyle = 'rgba(5,150,105,' + s.alpha + ')';
+      ctx.lineWidth = 1.5; ctx.stroke();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── WORK: Animated wave mesh ───────────────────────────────────
+(function() {
+  const ctx = setupCanvas(document.getElementById('work-canvas'));
+  let W = ctx.canvas.width, H = ctx.canvas.height;
+  window.addEventListener('resize', () => { W = ctx.canvas.width; H = ctx.canvas.height; }, {passive:true});
+  let t = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    t += .01;
+    const rows = 8, cols = 16;
+    for (let r = 0; r <= rows; r++) {
+      ctx.beginPath();
+      for (let c = 0; c <= cols; c++) {
+        const x = (c / cols) * W;
+        const y = (r / rows) * H + Math.sin(t + c * .5 + r * .3) * 18;
+        c === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = 'rgba(255,255,255,' + (.04 + r * .005) + ')';
+      ctx.lineWidth = .8; ctx.stroke();
+    }
+    for (let c = 0; c <= cols; c++) {
+      ctx.beginPath();
+      for (let r = 0; r <= rows; r++) {
+        const x = (c / cols) * W + Math.sin(t + r * .4 + c * .2) * 8;
+        const y = (r / rows) * H;
+        r === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = 'rgba(255,255,255,.03)';
+      ctx.lineWidth = .6; ctx.stroke();
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── EXP: Animated dot grid ────────────────────────────────────
+(function() {
+  const ctx = setupCanvas(document.getElementById('exp-canvas'));
+  let W = ctx.canvas.width, H = ctx.canvas.height;
+  window.addEventListener('resize', () => { W = ctx.canvas.width; H = ctx.canvas.height; }, {passive:true});
+  let t = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    t += .015;
+    const spacing = 38;
+    const cols = Math.ceil(W / spacing) + 1;
+    const rows = Math.ceil(H / spacing) + 1;
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        const x = c * spacing, y = r * spacing;
+        const wave = Math.sin(t + c * .4 + r * .3);
+        const alpha = .05 + wave * .04;
+        const size = .8 + wave * .4;
+        ctx.beginPath(); ctx.arc(x, y, size, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(5,150,105,' + alpha + ')'; ctx.fill();
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── SKILLS: Aurora drift ──────────────────────────────────────
+(function() {
+  const ctx = setupCanvas(document.getElementById('skills-canvas'));
+  let W = ctx.canvas.width, H = ctx.canvas.height;
+  window.addEventListener('resize', () => { W = ctx.canvas.width; H = ctx.canvas.height; }, {passive:true});
+  const blobs = Array.from({length: 4}, (_, i) => ({
+    x: W * (.2 + i * .2), y: H * .5,
+    r: 120 + Math.random() * 80,
+    phase: (i / 4) * Math.PI * 2,
+    color: i % 2 === 0 ? '16,185,129' : '99,102,241'
+  }));
+  let t = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    t += .006;
+    blobs.forEach(b => {
+      const x = b.x + Math.sin(t + b.phase) * 60;
+      const y = b.y + Math.cos(t * .7 + b.phase) * 30;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, b.r);
+      g.addColorStop(0, 'rgba(' + b.color + ',.18)');
+      g.addColorStop(.5, 'rgba(' + b.color + ',.08)');
+      g.addColorStop(1, 'rgba(' + b.color + ',0)');
+      ctx.beginPath(); ctx.arc(x, y, b.r, 0, Math.PI * 2);
+      ctx.fillStyle = g; ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── COMM: Rising sparkle particles ───────────────────────────
+(function() {
+  const ctx = setupCanvas(document.getElementById('comm-canvas'));
+  let W = ctx.canvas.width, H = ctx.canvas.height;
+  window.addEventListener('resize', () => { W = ctx.canvas.width; H = ctx.canvas.height; }, {passive:true});
+  const sparks = Array.from({length: 30}, () => ({
+    x: Math.random() * W, y: H + Math.random() * H,
+    vy: -(0.3 + Math.random() * 0.5),
+    r: Math.random() * 2 + .5,
+    alpha: Math.random() * .3 + .1
+  }));
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    sparks.forEach(s => {
+      s.y += s.vy;
+      if (s.y < -10) { s.y = H + 10; s.x = Math.random() * W; }
+      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(5,150,105,' + s.alpha + ')'; ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── CONTACT: Animated diagonal lines ─────────────────────────
+(function() {
+  const ctx = setupCanvas(document.getElementById('ct-canvas'));
+  let W = ctx.canvas.width, H = ctx.canvas.height;
+  window.addEventListener('resize', () => { W = ctx.canvas.width; H = ctx.canvas.height; }, {passive:true});
+  let t = 0;
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    t += .008;
+    const count = 20;
+    for (let i = 0; i < count; i++) {
+      const offset = ((i / count) * W * 2 + t * 40) % (W * 2) - W * .5;
+      ctx.beginPath();
+      ctx.moveTo(offset, 0); ctx.lineTo(offset + H, H);
+      ctx.strokeStyle = 'rgba(255,255,255,' + (.03 + (i % 3) * .01) + ')';
+      ctx.lineWidth = i % 4 === 0 ? 1.5 : .8;
+      ctx.stroke();
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
 </script>
 </body>
 </html>
