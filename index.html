@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sathish Kumar G — HR Business Partner</title>
+<meta name="description" content="Strategic HR Business Partner | 6+ Years | SaaS & Product Companies | Talent Strategy | POSH IC | Chennai, India">
+<meta property="og:title" content="Sathish Kumar G — HR Business Partner">
+<meta property="og:description" content="Strategic People Partner. 30% faster hiring. 88% offer acceptance. Targeting top product companies.">
+<meta name="theme-color" content="#FAFAF7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#FAFAF7;
+  --cream2:#F0EFE8;
+  --cream3:#E8E6DC;
+  --indigo:#1E1B4B;
+  --indigo2:#312E81;
+  --slate:#334155;
+  --muted:#64748B;
+  --dim:#94A3B8;
+  --green:#059669;
+  --green-hi:#10B981;
+  --green-dim:rgba(5,150,105,.1);
+  --green-glow:rgba(16,185,129,.06);
+  --amber:#D97706;
+  --amber-dim:rgba(217,119,6,.1);
+  --white:#FFFFFF;
+  --border:rgba(30,27,75,.1);
+  --border2:rgba(30,27,75,.06);
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Plus Jakarta Sans',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--slate);font-family:var(--sans);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--green);text-decoration:none;transition:color .2s}
+a:hover{color:var(--indigo)}
+::selection{background:var(--green);color:#fff}
+
+/* ── PROGRESS ─────────────────────────────────────────── */
+#prog{position:fixed;top:0;left:0;height:3px;width:0;z-index:9999;background:linear-gradient(90deg,var(--green),var(--green-hi));transition:width .1s}
+
+/* ── NAV ──────────────────────────────────────────────── */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:0 5%;height:70px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:all .35s var(--ease);
+}
+#nav.solid{
+  background:rgba(250,250,247,.95);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border2);
+  height:60px;
+  box-shadow:0 1px 24px rgba(30,27,75,.06);
+}
+.logo{
+  font-family:var(--serif);font-size:1.1rem;
+  color:var(--indigo);letter-spacing:.01em;
+  display:flex;align-items:center;gap:.5rem;
+}
+.logo-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:blink 2.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+.nav-ul{display:flex;gap:2rem;list-style:none}
+.nav-ul a{font-size:.8rem;font-weight:600;color:var(--muted);letter-spacing:.07em;text-transform:uppercase;transition:color .2s;padding:.2rem 0;border-bottom:2px solid transparent;transition:all .2s}
+.nav-ul a:hover,.nav-ul a.on{color:var(--green);border-bottom-color:var(--green)}
+.nav-dl{
+  background:var(--indigo);color:#fff;font-size:.8rem;font-weight:700;
+  padding:9px 22px;border-radius:50px;letter-spacing:.06em;
+  transition:background .2s,transform .15s;
+}
+.nav-dl:hover{background:var(--green);color:#fff;transform:translateY(-1px)}
+.burger{display:none;background:none;border:none;cursor:pointer;color:var(--indigo);font-size:1.4rem;line-height:1}
+
+/* ── HERO ─────────────────────────────────────────────── */
+#hero{
+  position:relative;min-height:100vh;overflow:hidden;
+  display:flex;align-items:center;
+}
+.hero-photo{
+  position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1900&q=85') center/cover no-repeat;
+  transform:scale(1.06);
+  transition:transform 12s ease;
+}
+#hero:hover .hero-photo{transform:scale(1)}
+/* warm amber-green gradient overlay — positive, energetic */
+.hero-photo::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(
+    120deg,
+    rgba(30,27,75,.88) 0%,
+    rgba(30,27,75,.78) 40%,
+    rgba(5,150,105,.45) 100%
+  );
+}
+.hero-body{
+  position:relative;z-index:2;
+  padding:120px 5% 80px;
+  max-width:760px;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:rgba(255,255,255,.1);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.18);
+  color:rgba(255,255,255,.9);font-size:.73rem;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:6px 14px;border-radius:99px;margin-bottom:1.5rem;
+  animation:fadeUp .7s var(--ease) .2s both;
+}
+.hero-badge span{width:6px;height:6px;background:var(--green-hi);border-radius:50%;display:inline-block}
+.hero-h1{
+  font-family:var(--serif);
+  font-size:clamp(3rem,7.5vw,5.8rem);
+  color:#fff;line-height:1.04;
+  margin-bottom:.5rem;
+  animation:fadeUp .8s var(--ease) .35s both;
+}
+.hero-sub{
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(1.2rem,2.8vw,1.9rem);
+  color:rgba(255,255,255,.75);
+  margin-bottom:1.8rem;
+  animation:fadeUp .8s var(--ease) .5s both;
+}
+.hero-desc{
+  font-size:1rem;color:rgba(255,255,255,.72);
+  max-width:520px;line-height:1.85;margin-bottom:2rem;
+  animation:fadeUp .8s var(--ease) .65s both;
+}
+.hero-desc strong{color:#fff;font-weight:600}
+.hero-chips{
+  display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2.2rem;
+  animation:fadeUp .8s var(--ease) .75s both;
+}
+.chip{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+  backdrop-filter:blur(6px);color:rgba(255,255,255,.85);
+  font-size:.71rem;font-weight:600;padding:5px 14px;border-radius:99px;
+  letter-spacing:.04em;transition:all .25s;
+}
+.chip:hover{background:var(--green);border-color:var(--green);color:#fff}
+.hero-btns{
+  display:flex;gap:1rem;flex-wrap:wrap;
+  animation:fadeUp .8s var(--ease) .88s both;
+}
+.btn-g{
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:var(--green);color:#fff;
+  padding:13px 28px;border-radius:50px;font-weight:700;font-size:.9rem;
+  transition:all .25s;box-shadow:0 4px 20px rgba(5,150,105,.35);
+}
+.btn-g:hover{background:var(--green-hi);color:#fff;transform:translateY(-2px);box-shadow:0 8px 28px rgba(16,185,129,.4)}
+.btn-w{
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:rgba(255,255,255,.12);color:#fff;
+  border:1px solid rgba(255,255,255,.25);
+  padding:13px 28px;border-radius:50px;font-weight:600;font-size:.9rem;
+  backdrop-filter:blur(6px);transition:all .25s;
+}
+.btn-w:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.4);transform:translateY(-2px)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+/* scroll cue */
+.scroll-cue{
+  position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);
+  z-index:2;display:flex;flex-direction:column;align-items:center;gap:.4rem;
+  color:rgba(255,255,255,.45);font-size:.68rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;
+  animation:fadeUp 1s var(--ease) 1.2s both;
+}
+.scroll-arrow{animation:arrowBounce 1.8s ease-in-out infinite}
+@keyframes arrowBounce{0%,100%{transform:translateY(0)}60%{transform:translateY(7px)}}
+
+/* ── METRICS BAR ──────────────────────────────────────── */
+#metrics{
+  background:var(--indigo);
+  position:relative;overflow:hidden;
+}
+#metrics::before{
+  content:'';position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=1400&q=60') center/cover;
+  opacity:.06;
+}
+.met-grid{
+  position:relative;z-index:1;
+  max-width:1140px;margin:0 auto;padding:0 5%;
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.met-cell{
+  padding:2.6rem 1rem;text-align:center;
+  border-right:1px solid rgba(255,255,255,.1);
+  transition:background .3s;
+}
+.met-cell:last-child{border-right:none}
+.met-cell:hover{background:rgba(255,255,255,.04)}
+.met-n{
+  font-family:var(--serif);font-size:3.2rem;font-weight:700;
+  color:var(--green-hi);line-height:1;margin-bottom:.35rem;
+}
+.met-l{font-size:.78rem;color:rgba(255,255,255,.55);font-weight:500;letter-spacing:.04em}
+
+/* ── SHARED ───────────────────────────────────────────── */
+.wrap{max-width:1140px;margin:0 auto;padding:0 5%}
+.sec{padding:110px 0}
+.eye{
+  display:flex;align-items:center;gap:.6rem;
+  font-size:.72rem;font-weight:700;color:var(--green);
+  letter-spacing:.18em;text-transform:uppercase;margin-bottom:.9rem;
+}
+.eye::before{content:'';width:22px;height:1.5px;background:var(--green);display:block}
+.sh{
+  font-family:var(--serif);font-size:clamp(2rem,4.5vw,3rem);
+  color:var(--indigo);margin-bottom:1rem;line-height:1.12;
+}
+.ss{font-size:.98rem;color:var(--muted);max-width:560px;line-height:1.85;margin-bottom:3.5rem}
+
+/* ── ABOUT ────────────────────────────────────────────── */
+#about{background:var(--cream)}
+.about-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:start}
+.at p{font-size:.97rem;color:var(--muted);line-height:1.9;margin-bottom:1.25rem}
+.at p strong{color:var(--green);font-weight:600}
+.at blockquote{
+  border-left:3px solid var(--green);padding:1rem 1.4rem;
+  background:var(--green-dim);border-radius:0 10px 10px 0;
+  font-family:var(--serif);font-size:1.08rem;color:var(--indigo);
+  font-style:italic;line-height:1.7;margin:1.8rem 0;
+}
+/* photo frame in about */
+.about-img{
+  position:relative;border-radius:16px;overflow:hidden;
+  box-shadow:0 20px 60px rgba(30,27,75,.15);
+}
+.about-img img{width:100%;display:block;height:420px;object-fit:cover}
+.about-img-cap{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(30,27,75,.85),transparent);
+  padding:1.8rem 1.4rem;color:#fff;
+}
+.about-img-cap .cap-title{font-family:var(--serif);font-size:1.2rem;margin-bottom:.2rem}
+.about-img-cap .cap-sub{font-size:.8rem;color:rgba(255,255,255,.65);font-weight:500}
+.pillars{display:flex;flex-direction:column;gap:.9rem;margin-top:1.8rem}
+.pillar{
+  background:var(--white);border:1px solid var(--border2);
+  border-radius:12px;padding:1.2rem 1.4rem;
+  display:flex;gap:1rem;align-items:flex-start;
+  box-shadow:0 2px 12px rgba(30,27,75,.05);
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+}
+.pillar:hover{transform:translateX(5px);box-shadow:0 4px 20px rgba(5,150,105,.1);border-color:rgba(5,150,105,.25)}
+.pi{
+  width:38px;height:38px;border-radius:10px;
+  background:var(--green-dim);border:1px solid rgba(5,150,105,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;flex-shrink:0;
+}
+.pt{font-size:.88rem;font-weight:700;color:var(--indigo);margin-bottom:.2rem}
+.pd{font-size:.82rem;color:var(--muted);line-height:1.65}
+
+/* ── CASE STUDIES ─────────────────────────────────────── */
+#work{position:relative;overflow:hidden}
+.work-photo{
+  position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1800&q=80') center/cover no-repeat;
+}
+/* warm teal-green overlay for "work" section */
+.work-photo::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(5,150,105,.95) 0%,rgba(30,27,75,.9) 100%);
+}
+.work-inner{position:relative;z-index:1;padding:110px 0}
+.work-inner .sh,.work-inner .eye,.work-inner .ss{color:rgba(255,255,255,.9) !important}
+.work-inner .eye{color:rgba(255,255,255,.7) !important}
+.work-inner .eye::before{background:rgba(255,255,255,.7)}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.cc{
+  background:rgba(255,255,255,.95);border-radius:14px;
+  padding:1.8rem;
+  border-top:4px solid var(--green);
+  box-shadow:0 8px 30px rgba(30,27,75,.15);
+  transition:transform .25s,box-shadow .25s;
+}
+.cc:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(30,27,75,.25)}
+.ctag{
+  font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--green);background:var(--green-dim);
+  border:1px solid rgba(5,150,105,.2);
+  display:inline-block;padding:3px 10px;border-radius:99px;margin-bottom:.9rem;
+}
+.ctitle{font-family:var(--serif);font-size:1.18rem;color:var(--indigo);margin-bottom:.4rem;line-height:1.3}
+.cco{font-size:.74rem;color:var(--dim);font-weight:600;letter-spacing:.06em;margin-bottom:1rem;text-transform:uppercase}
+.sl{font-size:.67rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.2rem}
+.st{font-size:.86rem;color:var(--muted);line-height:1.7;margin-bottom:.7rem}
+.st strong{color:var(--green);font-weight:600}
+.cres{
+  margin-top:1rem;padding:.85rem 1rem;
+  background:linear-gradient(135deg,rgba(5,150,105,.08),rgba(16,185,129,.04));
+  border:1px solid rgba(5,150,105,.18);border-radius:8px;
+  font-size:.86rem;color:var(--green);font-weight:600;line-height:1.55;
+}
+.cres::before{content:'↗ ';font-weight:900}
+
+/* ── EXPERIENCE ───────────────────────────────────────── */
+#exp{
+  position:relative;overflow:hidden;
+  background:var(--cream);
+}
+/* subtle texture overlay */
+.exp-texture{
+  position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=50') center/cover;
+  opacity:.03;pointer-events:none;
+}
+.exp-inner{position:relative;z-index:1}
+.tl{position:relative;padding-left:2.5rem}
+.tl::before{
+  content:'';position:absolute;left:.6rem;top:8px;bottom:8px;
+  width:2px;
+  background:linear-gradient(to bottom,var(--green) 0%,var(--green-hi) 60%,transparent 100%);
+  border-radius:99px;
+}
+.tli{position:relative;margin-bottom:2.8rem}
+.tldot{
+  position:absolute;left:-2rem;top:7px;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--cream);border:2.5px solid var(--green);
+  transition:all .2s;
+}
+.tli:hover .tldot,.tli.cur .tldot{background:var(--green);box-shadow:0 0 0 5px rgba(5,150,105,.15)}
+.tli-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:.15rem}
+.tlr{font-size:1.05rem;font-weight:700;color:var(--indigo)}
+.tld{font-size:.73rem;font-weight:700;color:var(--green);letter-spacing:.07em;white-space:nowrap;padding-top:.2rem}
+.tlco{font-size:.88rem;font-weight:700;color:var(--green);margin-bottom:.15rem}
+.tltag{font-size:.77rem;color:var(--dim);font-style:italic;margin-bottom:.85rem}
+.tlul{list-style:none}
+.tlul li{font-size:.87rem;color:var(--muted);line-height:1.7;margin-bottom:.3rem;padding-left:1.1rem;position:relative}
+.tlul li::before{content:'–';position:absolute;left:0;color:var(--green);font-weight:800}
+.tlul li strong{color:var(--indigo);font-weight:600}
+
+/* ── SKILLS ───────────────────────────────────────────── */
+#skills{position:relative;overflow:hidden}
+.sk-photo{
+  position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1800&q=80') center/cover;
+}
+/* indigo overlay — confidence, trust */
+.sk-photo::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(150deg,rgba(30,27,75,.96) 0%,rgba(30,27,75,.88) 60%,rgba(5,150,105,.5) 100%);
+}
+.sk-inner{position:relative;z-index:1;padding:110px 0}
+.sk-inner .sh{color:#fff}
+.sk-inner .eye{color:rgba(255,255,255,.7)}
+.sk-inner .eye::before{background:rgba(255,255,255,.7)}
+.sk-inner .ss{color:rgba(255,255,255,.6)}
+.sk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.skc{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+  backdrop-filter:blur(8px);border-radius:12px;padding:1.4rem 1.5rem;
+  transition:all .25s;
+}
+.skc:hover{background:rgba(255,255,255,.12);border-color:rgba(16,185,129,.4);transform:translateY(-3px)}
+.skcat{font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--green-hi);margin-bottom:.7rem}
+.skps{display:flex;flex-wrap:wrap;gap:.4rem}
+.skp{
+  font-size:.73rem;color:rgba(255,255,255,.65);
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
+  padding:3px 11px;border-radius:99px;transition:all .2s;cursor:default;
+}
+.skp:hover{background:rgba(5,150,105,.25);border-color:var(--green-hi);color:var(--green-hi)}
+
+/* ── COMMUNITY ────────────────────────────────────────── */
+#comm{background:var(--cream2)}
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.cgc{
+  background:var(--white);border:1px solid var(--border2);
+  border-radius:14px;padding:2rem 1.6rem;
+  box-shadow:0 2px 16px rgba(30,27,75,.06);
+  transition:all .28s;position:relative;overflow:hidden;
+}
+.cgc::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--green),var(--green-hi));
+  transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease);
+}
+.cgc:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(5,150,105,.12);border-color:rgba(5,150,105,.2)}
+.cgc:hover::before{transform:scaleX(1)}
+.cico{font-size:2.2rem;margin-bottom:1rem}
+.ctit{font-size:.95rem;font-weight:700;color:var(--indigo);margin-bottom:.55rem}
+.cdesc{font-size:.84rem;color:var(--muted);line-height:1.75}
+
+/* ── CONTACT ──────────────────────────────────────────── */
+#contact{position:relative;overflow:hidden;padding:130px 0}
+.ct-photo{
+  position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1560264280-88b68371db39?w=1800&q=80') center/cover;
+}
+/* amber-warm overlay — approachable, open */
+.ct-photo::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(30,27,75,.93) 0%,rgba(5,150,105,.75) 100%);
+}
+.ct-inner{position:relative;z-index:1;text-align:center;max-width:700px;margin:0 auto;padding:0 5%}
+.ct-inner .sh{color:#fff}
+.ct-inner .eye{color:rgba(255,255,255,.7);justify-content:center}
+.ct-inner .eye::before{background:rgba(255,255,255,.7)}
+.ct-inner .ss{color:rgba(255,255,255,.65);margin:0 auto 2.8rem}
+.cc-row{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.8rem}
+.cc-item{
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
+  backdrop-filter:blur(8px);border-radius:10px;
+  padding:1rem 1.6rem;display:flex;align-items:center;gap:.7rem;
+  font-size:.88rem;color:rgba(255,255,255,.85);
+  transition:all .25s;
+}
+.cc-item:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.4);color:#fff;transform:translateY(-2px)}
+.cic{font-size:1.1rem}
+.cta-row{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+
+/* ── FOOTER ───────────────────────────────────────────── */
+footer{
+  background:var(--indigo);
+  padding:1.8rem 5%;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;
+}
+footer span{font-size:.78rem;color:rgba(255,255,255,.4)}
+footer .fdot{color:var(--green-hi)}
+
+/* ── MOBILE ───────────────────────────────────────────── */
+@media(max-width:960px){
+  .about-wrap,.cases,.met-grid{grid-template-columns:1fr}
+  .met-cell:not(:last-child){border-right:none;border-bottom:1px solid rgba(255,255,255,.1)}
+  .sk-grid,.cg{grid-template-columns:1fr 1fr}
+  .nav-ul{display:none}
+  .burger{display:block}
+  .nav-ul.open{
+    display:flex;flex-direction:column;gap:0;
+    position:absolute;top:100%;left:0;right:0;
+    background:var(--cream);border-bottom:1px solid var(--border2);padding:1.2rem 5%;
+  }
+  .about-img{max-height:320px}
+  .about-img img{height:320px}
+}
+@media(max-width:600px){
+  .sk-grid,.cg{grid-template-columns:1fr}
+  .hero-h1{font-size:2.6rem}
+  .sec{padding:80px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="logo"><div class="logo-dot"></div>Sathish Kumar G</div>
+  <ul class="nav-ul" id="navul">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#exp">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="Sathish_Kumar_HRBP_Resume_Final.docx" download class="nav-dl">Resume ↓</a>
+  <button class="burger" id="burger">☰</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-photo"></div>
+  <div class="hero-body">
+    <div class="hero-badge"><span></span>HR Business Partner · Chennai, India</div>
+    <h1 class="hero-h1">Sathish<br>Kumar G</h1>
+    <p class="hero-sub">Strategic People Partner for Product Companies</p>
+    <p class="hero-desc">
+      I partner with <strong>Engineering &amp; Product leadership</strong> to turn business OKRs into people outcomes — faster hiring, stronger teams, and HR systems that scale. Currently at <strong>Quvia (Espace Networks)</strong>.
+    </p>
+    <div class="hero-chips">
+      <span class="chip">SaaS &amp; Product Orgs</span>
+      <span class="chip">Talent Strategy</span>
+      <span class="chip">POSH IC Member</span>
+      <span class="chip">Vendor Management</span>
+      <span class="chip">6+ Years</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#work" class="btn-g">View Case Studies ↓</a>
+      <a href="#contact" class="btn-w">Get in Touch →</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="scroll-arrow">↓</div>Scroll</div>
+</section>
+
+<!-- METRICS -->
+<div id="metrics">
+  <div class="met-grid">
+    <div class="met-cell" data-aos="fade-up" data-aos-delay="0">
+      <div class="met-n" data-count="30" data-suf="%">0%</div>
+      <div class="met-l">Faster Time-to-Hire</div>
+    </div>
+    <div class="met-cell" data-aos="fade-up" data-aos-delay="80">
+      <div class="met-n" data-count="25" data-suf="%">0%</div>
+      <div class="met-l">Lower Rejection Rate</div>
+    </div>
+    <div class="met-cell" data-aos="fade-up" data-aos-delay="160">
+      <div class="met-n" data-count="20" data-suf="%">0%</div>
+      <div class="met-l">Cost-per-Hire Savings</div>
+    </div>
+    <div class="met-cell" data-aos="fade-up" data-aos-delay="240">
+      <div class="met-n" data-count="88" data-suf="%">0%</div>
+      <div class="met-l">Offer Acceptance Rate</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap sec">
+    <div class="eye" data-aos="fade-up">About me</div>
+    <h2 class="sh" data-aos="fade-up" data-aos-delay="60">HR that thinks like a product team</h2>
+    <div class="about-wrap">
+      <div class="at" data-aos="fade-right" data-aos-delay="80">
+        <p>I'm a Strategic HR Business Partner with <strong>6+ years</strong> embedded in SaaS, product, and IT environments. My work sits at the intersection of people and business — I don't run HR programs, I solve business problems through people strategy.</p>
+        <p>At <strong>Quvia (Espace Networks)</strong>, I partner directly with Engineering and Product leadership. I've rebuilt hiring frameworks, launched people analytics programs, designed org-wide policies, and led vendor negotiations — while serving as POSH IC member and driving campus engagement programs.</p>
+        <blockquote>"Great HR is invisible to employees but visible in outcomes — how fast teams form, how long great people stay, and how clearly the company's values live in everyday decisions."</blockquote>
+        <p>Actively looking for <strong>HRBP or People Partner roles</strong> at top product-led organisations — fintech, SaaS, or e-commerce — where people strategy is taken seriously at the leadership table.</p>
+        <div class="pillars">
+          <div class="pillar"><div class="pi">📊</div><div><div class="pt">Data before intuition</div><div class="pd">Every hiring decision and retention risk backed by people data — dashboards, funnel metrics, leadership-ready insights.</div></div></div>
+          <div class="pillar"><div class="pi">🤝</div><div><div class="pt">Trust as infrastructure</div><div class="pd">HR credibility is built through consistency and fair processes — from exit interviews to POSH complaints.</div></div></div>
+          <div class="pillar"><div class="pi">⚡</div><div><div class="pt">Scale with empathy</div><div class="pd">Policies that work at 20 break at 200. I design people systems that flex with growth without losing the human element.</div></div></div>
+        </div>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="120">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&q=85" alt="Professional team collaboration in a modern workspace">
+          <div class="about-img-cap">
+            <div class="cap-title">People-first leadership</div>
+            <div class="cap-sub">Building teams that scale with purpose</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / CASE STUDIES -->
+<section id="work">
+  <div class="work-photo"></div>
+  <div class="work-inner">
+    <div class="wrap">
+      <div class="eye" data-aos="fade-up">Case studies</div>
+      <h2 class="sh" data-aos="fade-up" data-aos-delay="60">Work that moved the needle</h2>
+      <p class="ss" data-aos="fade-up" data-aos-delay="100">Real initiatives, real numbers — STAR format throughout.</p>
+      <div class="cases">
+        <div class="cc" data-aos="fade-up" data-aos-delay="0">
+          <div class="ctag">Talent Acquisition</div>
+          <div class="ctitle">Rebuilding the Technical Hiring Framework</div>
+          <div class="cco">Quvia (Espace Networks) · 2023–Present</div>
+          <div class="sl">Situation</div><div class="st">~35% candidate rejection from panels on profiles that had cleared HR screening. Engineering leads frustrated with wasted interview rounds.</div>
+          <div class="sl">Action</div><div class="st">Diagnosed 6 months of rejection feedback. Co-created role definition templates. Introduced <strong>competency-based scorecards</strong> and structured panel calibration sessions.</div>
+          <div class="cres">Rejection rate dropped <strong>25% in 2 quarters</strong>. Engineering now proactively partners with HR on role design.</div>
+        </div>
+        <div class="cc" data-aos="fade-up" data-aos-delay="80">
+          <div class="ctag">Hiring Efficiency</div>
+          <div class="ctitle">Cutting Time-to-Hire from 35 to 24 Days</div>
+          <div class="cco">Quvia (Espace Networks) · 2023–Present</div>
+          <div class="sl">Situation</div><div class="st">35+ day average TTH. Top candidates accepting competing offers. Sourcing over-dependent on low-quality job board pipelines.</div>
+          <div class="sl">Action</div><div class="st">Relaunched referral program. Built talent pipelines for recurring roles. Implemented parallel scheduling. Created a <strong>warm candidate database</strong>.</div>
+          <div class="cres">TTH: 35→24 days. Referral hires: &lt;10%→30%+. Acceptance: <strong>70%→88%</strong>. CPH down 20%.</div>
+        </div>
+        <div class="cc" data-aos="fade-up" data-aos-delay="0">
+          <div class="ctag">People Analytics</div>
+          <div class="ctitle">Attrition Intelligence Program</div>
+          <div class="cco">Quvia (Espace Networks) · 2024</div>
+          <div class="sl">Situation</div><div class="st">Anecdotal awareness of attrition but no structured data. Two key engineers left citing "lack of growth clarity" — no early warning system.</div>
+          <div class="sl">Action</div><div class="st">Redesigned exit interview template. Built attrition dashboard segmented by team, tenure, reason. Launched <strong>quarterly People Insights reports</strong> to leadership.</div>
+          <div class="cres">Two targeted retention interventions launched. Transparent L&amp;D path + manager effectiveness program implemented.</div>
+        </div>
+        <div class="cc" data-aos="fade-up" data-aos-delay="80">
+          <div class="ctag">Vendor Management</div>
+          <div class="ctitle">HR Vendor Cost Negotiation</div>
+          <div class="cco">Quvia (Espace Networks) · 2024</div>
+          <div class="sl">Situation</div><div class="st">HR vendor subscriptions (Naukri, SpringVerify, certification partners) on legacy pricing. No structured renegotiation process existed.</div>
+          <div class="sl">Action</div><div class="st">Became single POC for all HR vendors. Conducted usage audits, benchmarked market rates, led <strong>structured contract negotiations</strong>, introduced SLA tracking.</div>
+          <div class="cres">Measurable cost reductions across Naukri &amp; SpringVerify. Improved SLA compliance. Single accountability established.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="exp">
+  <div class="exp-texture"></div>
+  <div class="exp-inner">
+    <div class="wrap sec">
+      <div class="eye" data-aos="fade-up">Experience</div>
+      <h2 class="sh" data-aos="fade-up" data-aos-delay="60">Career timeline</h2>
+      <p class="ss" data-aos="fade-up" data-aos-delay="100">6+ years across SaaS, Fortune 500 IT, and high-growth recruitment environments.</p>
+      <div class="tl" data-aos="fade-up" data-aos-delay="120">
+        <div class="tli cur">
+          <div class="tldot"></div>
+          <div class="tli-head"><div class="tlr">HR Business Partner – Talent & Operations</div><div class="tld">AUG 2023 – PRESENT</div></div>
+          <div class="tlco">Quvia (Espace Networks)</div>
+          <div class="tltag">SaaS · Product-led org · Global & remote-first workforce</div>
+          <ul class="tlul">
+            <li>Embedded HRBP for Engineering, Product & Business — OKR-aligned headcount planning</li>
+            <li>Rebuilt technical hiring framework — <strong>25% lower rejection rate</strong></li>
+            <li>Multi-channel sourcing — <strong>30% faster TTH, 20% lower CPH</strong>, referrals 10%→30%+</li>
+            <li>Offer acceptance: <strong>70% → 88%</strong></li>
+            <li>IC member under POSH Act — complaint handling & statutory compliance</li>
+            <li>HR vendor management — Naukri, SpringVerify; <strong>cost negotiations & contract finalisation</strong></li>
+            <li>Campus mock interviews for pre-final year students — employer branding & talent pipeline</li>
+            <li>HRIS: Remote, Papaya Global, BambooHR, GreyHR</li>
+          </ul>
+        </div>
+        <div class="tli">
+          <div class="tldot"></div>
+          <div class="tli-head"><div class="tlr">Senior IT Recruiter (Contract)</div><div class="tld">JUN 2022 – NOV 2022</div></div>
+          <div class="tlco">Virtusa</div>
+          <div class="tltag">Global IT services · High-volume product & engineering hiring</div>
+          <ul class="tlul">
+            <li>Closed <strong>50+ hires</strong> across product, engineering, QA, cloud in 6 months</li>
+            <li>Hiring cycle: <strong>25 → 17 days</strong> (32% improvement)</li>
+            <li>Veriklick & Talview deployment — freed <strong>10 engineering hours/week</strong></li>
+            <li><strong>>90%</strong> offer-to-joining conversion rate</li>
+          </ul>
+        </div>
+        <div class="tli">
+          <div class="tldot"></div>
+          <div class="tli-head"><div class="tlr">HR Recruiter (Contract)</div><div class="tld">MAR 2021 – DEC 2021</div></div>
+          <div class="tlco">HCL Technologies</div>
+          <div class="tltag">Fortune 500 IT · Multi-function hiring across India</div>
+          <ul class="tlul">
+            <li>Full-cycle recruitment across <strong>10+ IT functions</strong></li>
+            <li>Mass hiring events handling <strong>100+ candidates per event</strong></li>
+            <li>Talent pool of <strong>500+ pre-screened candidates</strong> built & maintained</li>
+          </ul>
+        </div>
+        <div class="tli">
+          <div class="tldot"></div>
+          <div class="tli-head"><div class="tlr">IT Recruiter (Contract)</div><div class="tld">DEC 2019 – JAN 2021</div></div>
+          <div class="tlco">Infomatics Inc.</div>
+          <div class="tltag">IT staffing · Permanent and contract placement</div>
+          <ul class="tlul">
+            <li>End-to-end recruitment across IT verticals for multiple clients</li>
+            <li>Coordinated with <strong>8+ vendor partners</strong> with SLA-driven tracking</li>
+            <li>Niche-skill database — reduced time-to-shortlist by <strong>~20%</strong></li>
+          </ul>
+        </div>
+        <div class="tli">
+          <div class="tldot"></div>
+          <div class="tli-head"><div class="tlr">HR Trainee</div><div class="tld">AUG 2019 – NOV 2019</div></div>
+          <div class="tlco">BUZZ Works Solutions</div>
+          <div class="tltag">HR solutions firm · Foundation in recruitment & operations</div>
+          <ul class="tlul"><li>Recruitment coordination, HR documentation, onboarding support</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sk-photo"></div>
+  <div class="sk-inner">
+    <div class="wrap">
+      <div class="eye" data-aos="fade-up">Skills & tools</div>
+      <h2 class="sh" data-aos="fade-up" data-aos-delay="60">What I bring to the table</h2>
+      <p class="ss" data-aos="fade-up" data-aos-delay="100">Full-spectrum HRBP toolkit — strategic planning to HRIS operations.</p>
+      <div class="sk-grid">
+        <div class="skc" data-aos="fade-up" data-aos-delay="0"><div class="skcat">HR Strategy</div><div class="skps"><span class="skp">Workforce Planning</span><span class="skp">Org Design</span><span class="skp">Succession Planning</span><span class="skp">Headcount Planning</span><span class="skp">OKR Alignment</span><span class="skp">Stakeholder Consulting</span></div></div>
+        <div class="skc" data-aos="fade-up" data-aos-delay="60"><div class="skcat">Talent Acquisition</div><div class="skps"><span class="skp">Full-Cycle Recruitment</span><span class="skp">Panel Calibration</span><span class="skp">Employer Branding</span><span class="skp">Campus Relations</span><span class="skp">Referral Programs</span></div></div>
+        <div class="skc" data-aos="fade-up" data-aos-delay="120"><div class="skcat">People Analytics</div><div class="skps"><span class="skp">Attrition Analysis</span><span class="skp">Hiring-Funnel Metrics</span><span class="skp">KPI Tracking</span><span class="skp">Retention Strategy</span><span class="skp">Data-Driven Decisions</span></div></div>
+        <div class="skc" data-aos="fade-up" data-aos-delay="0"><div class="skcat">Employee Experience</div><div class="skps"><span class="skp">Onboarding Design</span><span class="skp">Performance Management</span><span class="skp">Career Pathing</span><span class="skp">Grievance Handling</span><span class="skp">Exit Management</span></div></div>
+        <div class="skc" data-aos="fade-up" data-aos-delay="60"><div class="skcat">HR Operations & Compliance</div><div class="skps"><span class="skp">POSH Compliance</span><span class="skp">India Labour Law</span><span class="skp">Policy Creation</span><span class="skp">Vendor Management</span><span class="skp">Cost Negotiation</span><span class="skp">Change Management</span></div></div>
+        <div class="skc" data-aos="fade-up" data-aos-delay="120"><div class="skcat">HRIS & Tools</div><div class="skps"><span class="skp">BambooHR</span><span class="skp">Remote</span><span class="skp">Papaya Global</span><span class="skp">GreyHR</span><span class="skp">Veriklick</span><span class="skp">Talview</span><span class="skp">SpringVerify</span><span class="skp">MS Excel</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section id="comm">
+  <div class="wrap sec">
+    <div class="eye" data-aos="fade-up">Beyond the role</div>
+    <h2 class="sh" data-aos="fade-up" data-aos-delay="60">Community & responsibility</h2>
+    <p class="ss" data-aos="fade-up" data-aos-delay="100">The work that doesn't show on a JD but defines the HR professional.</p>
+    <div class="cg">
+      <div class="cgc" data-aos="zoom-in" data-aos-delay="0"><div class="cico">⚖️</div><div class="ctit">POSH Internal Committee Member</div><div class="cdesc">IC member under the Prevention of Sexual Harassment Act. Handle complaints with confidentiality, procedural rigour, and full statutory compliance — ensuring every employee feels safe and heard.</div></div>
+      <div class="cgc" data-aos="zoom-in" data-aos-delay="80"><div class="cico">🎓</div><div class="ctit">Campus Mock Interview Program</div><div class="cdesc">Conduct mock interviews for pre-final year students at partner colleges — part of employer branding and public relations, building early-talent pipelines while investing in the next generation.</div></div>
+      <div class="cgc" data-aos="zoom-in" data-aos-delay="160"><div class="cico">🤝</div><div class="ctit">Certification & Coaching Partnerships</div><div class="cdesc">Single POC for L&D and certification vendors. Manage vendor relationships, coordinate employee upskilling, and negotiate subscription costs to maximise value for the organisation.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="ct-photo"></div>
+  <div class="ct-inner">
+    <div class="eye" data-aos="fade-up">Let's connect</div>
+    <h2 class="sh" data-aos="fade-up" data-aos-delay="60">Open to the right opportunity</h2>
+    <p class="ss" data-aos="fade-up" data-aos-delay="100">Looking for HRBP or People Partner roles at product-led companies where HR is a strategic function, not a support one.</p>
+    <div class="cc-row" data-aos="fade-up" data-aos-delay="140">
+      <a href="mailto:sathishnk6@gmail.com" class="cc-item"><span class="cic">✉</span>sathishnk6@gmail.com</a>
+      <a href="tel:+919600534948" class="cc-item"><span class="cic">📞</span>+91 9600534948</a>
+      <a href="https://www.linkedin.com/in/sathish-kumar-g-503452130" target="_blank" class="cc-item"><span class="cic">🔗</span>LinkedIn</a>
+      <a href="#" class="cc-item"><span class="cic">📍</span>Chennai, India</a>
+    </div>
+    <div class="cta-row" data-aos="fade-up" data-aos-delay="180">
+      <a href="Sathish_Kumar_HRBP_Resume_Final.docx" download class="btn-g">Download Resume ↓</a>
+      <a href="mailto:sathishnk6@gmail.com" class="btn-w">Send a Message →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2025 Sathish Kumar G <span class="fdot">·</span> sathishkumarg.in</span>
+  <span>HR Business Partner <span class="fdot">·</span> Chennai, India</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+AOS.init({duration:750,easing:'ease-out-quart',once:true,offset:70,delay:0});
+
+/* progress */
+window.addEventListener('scroll',()=>{
+  const p=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100;
+  document.getElementById('prog').style.width=p+'%';
+},{passive:true});
+
+/* nav solid */
+const nav=document.getElementById('nav');
+const links=document.querySelectorAll('.nav-ul a');
+const secs=[...document.querySelectorAll('section[id],div[id]')];
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('solid',window.scrollY>50);
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});
+  links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
+},{passive:true});
+
+/* burger */
+document.getElementById('burger').addEventListener('click',()=>
+  document.getElementById('navul').classList.toggle('open'));
+
+/* counter */
+const nums=document.querySelectorAll('[data-count]');
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target,target=+el.dataset.count,suf=el.dataset.suf||'';
+    let v=0;const inc=target/80;
+    const t=setInterval(()=>{
+      v=Math.min(v+inc,target);
+      el.textContent=Math.round(v)+suf;
+      if(v>=target)clearInterval(t);
+    },16);
+    io.unobserve(el);
+  });
+},{threshold:.6});
+nums.forEach(n=>io.observe(n));
+
+/* hero photo parallax */
+const hp=document.querySelector('.hero-photo');
+window.addEventListener('scroll',()=>{
+  hp.style.transform=`scale(1.06) translateY(${window.scrollY*.22}px)`;
+},{passive:true});
+</script>
+</body>
+</html>
